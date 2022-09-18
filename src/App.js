@@ -1,11 +1,16 @@
 import React from 'react'
+import Banner from '../src/Components/Banner.js'
+import NavBar from '../src/Components/NavBar.js'
+import Home from './Components/Home.js'
 import './App.css'
 
 
 export default function App() {
   return (
-    <h1 className="text-3xl  ">
-      Hello world!
-    </h1>
+   <>
+    <Banner />
+    <NavBar />
+    <Home />
+   </>
   )
 }
