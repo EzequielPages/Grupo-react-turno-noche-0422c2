@@ -1,13 +1,16 @@
 import React from 'react'
+import Banner from '../src/Components/Banner.js'
+import NavBar from '../src/Components/NavBar.js'
+import Home from './Components/Home.js'
 import './App.css'
 
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <h1>A trabajar</h1>
-    </div>
-  );
+   <>
+    <Banner />
+    <NavBar />
+    <Home />
+   </>
+  )
 }
-
-export default App;
