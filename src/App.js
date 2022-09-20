@@ -8,10 +8,12 @@ import './App.css'
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <Banner />
-      <NavBar />
-      <Home />
-    </ThemeProvider>
+    <>
+      <ThemeProvider>
+        <Banner />
+        <NavBar />
+        <Home />
+      </ThemeProvider>
+    </>
   )
 }
