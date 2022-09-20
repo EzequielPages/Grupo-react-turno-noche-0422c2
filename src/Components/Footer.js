@@ -1,5 +1,6 @@
 import React from "react";
 import Logo1 from "..//asset/logo1.svg";
+<<<<<<< HEAD
 
 const Footer = () => {
   return (
@@ -7,6 +8,16 @@ const Footer = () => {
       <div>
         <img src={Logo1} alt="logo" />
         <p>Agencia De Viajes Desde 2022</p>
+=======
+// import logo from "../asset/logo.png";
+
+const Footer = () => {
+  return (
+    <footer className="footer p-10 bg-base-100 text-base-content">
+      <div>
+        <img src="{logo}" alt="" />
+        <p>Agencia de Viajes Desde 2022</p>
+>>>>>>> a2a8bb1ce553ac614841581470838329c448e5e1
       </div>
       <div>
         <span className="footer-title">Info</span>
