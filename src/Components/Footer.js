@@ -1,12 +1,13 @@
 import React from "react";
 import Logo1 from "..//asset/logo1.svg";
+// import logo from "../asset/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="footer p-10 bg-base-100 text-base-content dark: bg-black, dark: text-white">
+    <footer className="footer p-10 bg-base-100 text-base-content">
       <div>
-        <img src={Logo1} alt="logo" />
-        <p>Agencia De Viajes Desde 2022</p>
+        <img src="{logo}" alt="" />
+        <p>Agencia de Viajes Desde 2022</p>
       </div>
       <div>
         <span className="footer-title">Info</span>
