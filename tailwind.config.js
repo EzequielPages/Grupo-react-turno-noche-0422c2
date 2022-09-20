@@ -13,5 +13,36 @@ module.exports = {
     },
     extend: {},
   },
+  /**** CONFIG DE COLORES DE DAISYUI ****/
+
+  daisyui: {
+    themes: [
+      {
+        palete: {
+          primary: "#dea26c",
+
+          secondary: "#6f4837",
+
+          tertiary: "#3d272a",
+
+          fourth: "#05080d",
+
+          accent: "#a26e49",
+
+          neutral: "#22353c",
+
+          "base-100": "#e7e3e2",
+
+          info: "#3ABFF8",
+
+          success: "#36D399",
+
+          warning: "#FBBD23",
+
+          error: "#F87272",
+        },
+      },
+    ],
+  },
   plugins: [require("daisyui")],
 };
