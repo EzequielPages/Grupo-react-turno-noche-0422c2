@@ -45,9 +45,5 @@ module.exports = {
     ],
   },
   plugins: [require("daisyui")],
-<<<<<<< HEAD
   darkMode: 'class',
 }
-=======
-};
->>>>>>> footer
