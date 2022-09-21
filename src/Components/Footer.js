@@ -1,5 +1,6 @@
 import React from "react";
 import Logo1 from "..//asset/logo1.svg";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
 const Footer = () => {
   return (
@@ -11,6 +12,7 @@ const Footer = () => {
       <div>
         <span className="footer-title">Info</span>
         <a href="#" className="link link-hover">
+          <FontAwesomeIcon icon="fa-regular fa-paper-plane" />
           info@example.com
         </a>
         <a href="#" className="link link-hover">
