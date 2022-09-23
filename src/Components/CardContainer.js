@@ -6,10 +6,10 @@ import { faLocationDot} from "@fortawesome/free-solid-svg-icons"
 
 const CardContainer = () => {
   return (
-    <div className="bg-base-100">
-      <h5 className="text-center italic text-blue-500">Recorré el mundo <FontAwesomeIcon icon={faPlaneDeparture}/></h5>
-      <h3 className="text-center font-medium textarea-ghost"><FontAwesomeIcon icon={faLocationDot}/> Tours más famosos</h3>
-    <section className="container mx-auto md:grid-flow-col-dense md:items-center sm:flex-row justify-center md:justify-evenly md:gap-2 sm:gap-1 items-center grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
+    <div className="bg-seventh-color dark:bg-fourth-color ">
+      <h5 className="text-center italic text-first-color dark:text-seventh-color">Recorré el mundo <FontAwesomeIcon icon={faPlaneDeparture}/></h5>
+      <h3 className="text-center font-medium text-first-color dark:text-second-color mb-4"><FontAwesomeIcon icon={faLocationDot}/> Tours más famosos</h3>
+    <section className="container mx-auto md:grid-flow-col-dense md:items-center sm:flex-row justify-center md:justify-evenly md:gap-2 sm:gap-1 items-center grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mb-6">
         <Card
         image = "/Media/Qatar.jpg"
         country = "QATAR"
