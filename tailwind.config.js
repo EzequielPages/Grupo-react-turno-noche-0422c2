@@ -11,8 +11,17 @@ module.exports = {
       "sixth-color": "#3d272a",
       "seventh-color": "#e7e3e2",
     },
-    extend: {},
+
+    extend: {
+      spacing: {
+        width: "570px",
+        height: "432px",
+        top: "2797px",
+        left: "55px",
+      },
+    },
   },
+
   /**** CONFIG DE COLORES DE DAISYUI ****/
 
   daisyui: {
