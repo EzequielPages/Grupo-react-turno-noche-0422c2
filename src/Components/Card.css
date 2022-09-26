@@ -1,0 +1,70 @@
+.size-image{
+    width: 100vh;
+    height: 235px;
+    object-fit: cover;
+}
+.card-size{
+    height: 500px;
+}
+.btn-style{
+    margin: 30px;
+}
+.info-style{
+    margin: 30px;
+}
+.containerAnimated {
+    position: relative;
+}
+.imageAnimated {
+    display: block;
+}
+.overlayAnimated {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0000002c;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+    border-radius: 24px 24px 0px 0px;
+}
+.containerAnimated:hover .overlayAnimated {
+    bottom: 0;
+    height: 100%;
+  }
+.textAnimated {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.zoomEfect {
+    transition: transform .2s;
+    margin: 0 auto;
+  } 
+  .zoomEfect:hover {
+    transform: scale(1.02);
+  }
+  @media only screen and (max-width: 768px){
+    .zoomEfect:hover{
+        transform: none;
+    }
+    .overlayAnimated {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #0000002c;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+        border-radius: 0px;
+    }
+    }
