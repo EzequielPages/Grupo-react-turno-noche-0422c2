@@ -21,8 +21,17 @@ module.exports = {
       "sixth-night-color": "#201416",
       "seventh-night-color": "#e6e3e3",
     },
-    extend: {},
+
+    extend: {
+      spacing: {
+        width: "570px",
+        height: "432px",
+        top: "2797px",
+        left: "55px",
+      },
+    },
   },
+
   /**** CONFIG DE COLORES DE DAISYUI ****/
 
   daisyui: {
