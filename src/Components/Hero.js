@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src={Viaje}
-          className="rounded-lg shadow-2xl w-width h-height top-top left-left "
+          className="rounded-lg shadow-2xl w-fit"
           alt="mapa con elementos"
         />
         <div>
