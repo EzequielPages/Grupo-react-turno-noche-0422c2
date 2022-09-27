@@ -8,6 +8,7 @@ import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
+    <div>
     <footer className="footer p-8 bg-second-color text-fourth-color dark:bg-fifth-night-color dark:text-seventh-night-color">
       <div>
         <img src={Logo1} alt="logo" width={220} />
@@ -15,7 +16,7 @@ const Footer = () => {
       <div>
         <span className="footer-title">Info</span>
         <a href="#" className="link link-hover p-1">
-          <FontAwesomeIcon icon={faPaperPlane} /> traveln@gmail.com
+          <FontAwesomeIcon icon={faPaperPlane} />  TravelN@gmail.com
         </a>
         <a href="#" className="link link-hover p-1">
           <FontAwesomeIcon icon={faLocationDot} /> N°1080 Calle Rivadavia,
@@ -57,6 +58,10 @@ const Footer = () => {
         </a>
       </div>
     </footer>
+    <div className="text-center bg-first-night-color">
+      <p className="text-seventh-color">© 2022 TRAVEL-N, Todos los derechos reservados.</p>
+    </div>
+    </div>
   );
 };
 

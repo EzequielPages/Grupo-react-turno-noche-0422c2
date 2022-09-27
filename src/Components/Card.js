@@ -11,7 +11,7 @@ import "./Card.css"
 const Card = ({ image, country, plan, reviews, duration, price, textDeploy, }) => {
   return (
 
-    <div className="border-2 border-first-color dark:border-second-night-color border-gray-600 shadow-first-color shadow-md bg-seventh-color dark:bg-seventh-color flex flex-col justify-start card-size md:rounded-3xl zoomEfect" >
+    <div className="border-2 border-first-color dark:border-first-night-color shadow-first-color shadow-md bg-seventh-color dark:bg-first-night-color flex flex-col justify-start card-size md:rounded-3xl zoomEfect">
       <div className="containerAnimated">
         <img className="overflow-hidden size-image imageAnimated md:rounded-tl-3xl md:rounded-tr-3xl" src={image} alt={image} />
         <div class="overlayAnimated">
@@ -32,7 +32,7 @@ const Card = ({ image, country, plan, reviews, duration, price, textDeploy, }) =
           </div>
           <p className="text-first-color dark:text-seventh-color">{reviews} REVIEWS</p>
         </div>
-        <div className="flex justify-between border-t-2 info-style">
+        <div className="flex justify-between border-t-2 border-t-second-color info-style">
           <span className="m-1 text-first-color dark:text-seventh-color">{duration}</span>
           <span className="text-success">USD${price}</span>
         </div>
