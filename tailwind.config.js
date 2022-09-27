@@ -10,6 +10,16 @@ module.exports = {
       "fifth-color": "#a26e49",
       "sixth-color": "#3d272a",
       "seventh-color": "#e7e3e2",
+
+      // Noche:
+
+      "first-night-color": "#162227",
+      "second-night-color": "#ad7d54",
+      "third-night-color": "#472e23",
+      "fourth-night-color": "#000000",
+      "fifth-night-color": "#69472f",
+      "sixth-night-color": "#201416",
+      "seventh-night-color": "#aaa7a6",
     },
     extend: {},
   },
