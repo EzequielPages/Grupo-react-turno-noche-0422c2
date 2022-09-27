@@ -4,8 +4,16 @@ import {
     FacebookIcon,
     WhatsappShareButton,
     WhatsappIcon,
-    LinkedInShareButton,
-    LinkedInIcon,
+    EmailShareButton,
+    EmailIcon,
+    TwitterShareButton,
+    TwitterIcon,
+    TelegramShareButton,
+    TelegramIcon,
+    RedditShareButton,
+    RedditIcon,
+    FacebookMessengerShareButton,
+    FacebookMessengerIcon
 } from "react-share";
 
 const Share = () => {
@@ -14,17 +22,36 @@ const Share = () => {
 
     return (
         <>
-            <FacebookShareButton url={shareUrl}>
-                <FacebookIcon size={40} round={true} />
-            </FacebookShareButton>
+            <div class="flex items-center justify-center space-x-14 h-44 bg-third-color">
 
-            <WhatsappShareButton url={shareUrl}>
-                <WhatsappIcon size={40} round={true} />
-            </WhatsappShareButton>
+                <FacebookShareButton url={shareUrl}>
+                    <FacebookIcon size={40} round={true} />
+                </FacebookShareButton>
 
-            <LinkedInShareButton url={shareUrl}>
-                <LinkedInIcon size={40} round={true} />
-            </LinkedInShareButton>
+                <TwitterShareButton url={shareUrl}>
+                    <TwitterIcon size={40} round={true} />
+                </TwitterShareButton>
+
+                <WhatsappShareButton url={shareUrl}>
+                    <WhatsappIcon size={40} round={true} />
+                </WhatsappShareButton>
+
+                <FacebookMessengerShareButton url={shareUrl}>
+                    <FacebookMessengerIcon size={40} round={true} />
+                </FacebookMessengerShareButton>
+
+                <TelegramShareButton url={shareUrl}>
+                    <TelegramIcon size={40} round={true} />
+                </TelegramShareButton>
+
+                <RedditShareButton url={shareUrl}>
+                    <RedditIcon size={40} round={true} />
+                </RedditShareButton>
+
+                <EmailShareButton url={shareUrl}>
+                    <EmailIcon size={40} round={true} />
+                </EmailShareButton>
+            </div>
         </>
     )
 }
