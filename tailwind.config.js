@@ -19,7 +19,7 @@ module.exports = {
       "fourth-night-color": "#000000",
       "fifth-night-color": "#69472f",
       "sixth-night-color": "#201416",
-      "seventh-night-color": "#aaa7a6",
+      "seventh-night-color": "#e6e3e3",
     },
     extend: {},
   },
