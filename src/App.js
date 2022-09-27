@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import CardContainer from "./Components/CardContainer.js";
 import Carousel from "./Components/Carousel.js";
 import Hero from "./Components/Hero.js";
-import Share from "./Components/Share.js";
+// import Share from "./Components/Share.js";
 import { ThemeProvider } from "./Components/ThemeContext.js";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
