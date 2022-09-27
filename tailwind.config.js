@@ -13,7 +13,7 @@ module.exports = {
 
       // Noche:
 
-      "first-night-color": "#162227",
+      "first-night-color": "#121b1f",
       "second-night-color": "#ad7d54",
       "third-night-color": "#472e23",
       "fourth-night-color": "#000000",
