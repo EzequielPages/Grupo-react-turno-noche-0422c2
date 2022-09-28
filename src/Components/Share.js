@@ -22,7 +22,7 @@ const Share = () => {
 
     return (
         <>
-            <div class="flex items-center justify-center space-x-14 h-44 bg-third-color">
+            <div class="flex items-center justify-center space-x-14 h-44  bg-third-color dark:bg-sixth-color ">
 
                 <FacebookShareButton url={shareUrl}>
                     <FacebookIcon size={40} round={true} />
