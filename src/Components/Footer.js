@@ -9,7 +9,7 @@ import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-8 bg-second-color text-fourth-color dark:bg-fifth-night-color dark:text-seventh-night-color">
+      <footer className="footer p-8 bg-base-200 text-fourth-color dark:bg-third-night-color dark:text-seventh-night-color">
         <div>
           <img src={Logo1} alt="logo" width={220} />
         </div>
