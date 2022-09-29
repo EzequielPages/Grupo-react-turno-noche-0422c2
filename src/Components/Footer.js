@@ -35,7 +35,7 @@ const FooterV2 = () => {
                         <p className="hover:text-fifth-color dark:hover:text-fifth-color text-base leading-4 mt-6 dark:text-seventh-color cursor-pointer">Precios</p>
                         <p className="hover:text-fifth-color dark:hover:text-fifth-color text-base leading-4 mt-6 dark:text-seventh-color cursor-pointer">Sobre nosotros</p>
                         <p className="hover:text-fifth-color dark:hover:text-fifth-color text-base leading-4 mt-6 dark:text-seventh-color cursor-pointer">Contáctenos</p>
-                        <p className="hover:text-fifth-color dark:hover:text-fifth-color text-base leading-4 mt-6 dark:text-seventh-color cursor-pointer">Testimonials</p>
+                        <p className="hover:text-fifth-color dark:hover:text-fifth-color text-base leading-4 mt-6 dark:text-seventh-color cursor-pointer">Testimoniales</p>
                     </div>
                     <div>
                         <h2 className="text-base font-semibold leading-4 text-fifth-color">SOPORTE</h2>
