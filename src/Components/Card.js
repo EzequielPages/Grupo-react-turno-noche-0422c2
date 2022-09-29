@@ -41,7 +41,7 @@ const Card = ({
             <FontAwesomeIcon icon={faStar} className="text-second-color" />
             <FontAwesomeIcon icon={faStarHalf} className="text-second-color" />
           </div>
-          <p className="text-first-color dark:text-seventh-color">
+          <p className="text-first-color dark:text-seventh-color italic">
             {reviews} REVIEWS
           </p>
         </div>

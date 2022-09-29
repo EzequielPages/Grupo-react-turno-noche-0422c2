@@ -30,7 +30,7 @@ function ChildModal() {
 
   return (
     <React.Fragment>
-      <Button variant='contained' color="success" onClick={handleOpen}>Agregar al carrito</Button>
+      <Button variant='contained' color="success" className="italic" onClick={handleOpen}>Agregar al carrito</Button>
       <Modal
         hideBackdrop
         open={open}
@@ -39,10 +39,10 @@ function ChildModal() {
         aria-describedby="child-modal-description"
       >
         <Box className="text-center" sx={{ ...style, width: 200 }}>
-          <p id="child-modal-description" className='mb-2 text-center'>
+          <p id="child-modal-description" className='mb-2 text-center italic'>
             ¿Está seguro que desea agregar esto al carrito?
           </p>
-          <Button className="mb-2" onClick={handleClose}>Confirmar</Button>
+          <Button className="mb-2 italic" onClick={handleClose}>Confirmar</Button>
         </Box>
       </Modal>
     </React.Fragment>
@@ -68,7 +68,7 @@ export default function NestedModal({destino}) {
         aria-describedby="parent-modal-description"
       >
         <Box className="modalSize" sx={{ ...style, width: 600 }}>
-          <h2 id="parent-modal-title">Tu viaje a {destino}</h2>
+          <h2 id="parent-modal-title" className='italic'>Tu viaje a {destino}</h2>
           <p id="parent-modal-description" className='mb-5'>
             Selecciona la fecha ideal para tu viaje
           </p>
