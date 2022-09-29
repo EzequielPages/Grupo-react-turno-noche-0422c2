@@ -12,6 +12,8 @@ import Share from "./Components/Share.js";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import FooterV2 from "./Components/FooterV2.js";
+
 
 export default function App() {
   return (
@@ -25,6 +27,7 @@ export default function App() {
         <CardContainer />
         <Reviews />
         <Share />
+        <FooterV2/>
         <Footer />
       </ThemeProvider>
     </>
