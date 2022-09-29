@@ -16,11 +16,11 @@ const Hero = () => {
           </h3>
           <p className="py-6 text-base font-medium">
             TravelN es una agencia de viajes y turismo en Argentina, que se creó
-            en la provincia de Buenos Aires, en el año 2022 con la idea de organizar
+            en la provincia de Buenos Aires, en el año 2022, con la idea de organizar
             viajes de calidad a nivel nacional e internacional, teniendo como
             núcleo turístico la Argentina y algunas de las grandes ciudades más
-            importantes del mundo como lo es Ciudad de Buenos Aires. Desde entonces, nuestra
-            empresa viene creciendo en forma vertiginosa teniendo como clave del
+            importantes del mundo, como lo es Ciudad de Buenos Aires. Desde entonces, nuestra
+            empresa viene creciendo en forma vertiginosa, teniendo como clave del
             éxito la total satisfacción de nuestros clientes, basada en la
             confianza de nuestro personal en el cumplimiento de las políticas y
             objetivos.
