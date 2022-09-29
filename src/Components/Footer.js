@@ -58,7 +58,7 @@ const FooterV2 = () => {
                 </div>
             </div>
             <div className="mt-10 lg:hidden">
-                <label className="text-sm font-medium leading-5 text-thir dark:text-seventh-color">QUIERO OFERTAS  <FontAwesomeIcon icon={faArrowDown}/></label>
+                <label className="text-sm font-medium leading-5 text-thir dark:text-seventh-color">QUIERO OFERTAS <FontAwesomeIcon icon={faArrowDown}/></label>
                 <div className="flex items-center justify-between border border-gray-800 mt-4">
                     <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none text-seventh-color placeholder-gray-800" placeholder="Enter your email" />
                     <div className="cursor-pointer mr-4 relative z-40">
