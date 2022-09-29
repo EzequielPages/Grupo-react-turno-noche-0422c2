@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faLocationDot, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import "./Card.css";
+import CardModal from "./CardModal";
+import NestedModal from "./CardModal";
 
 const Card = ({
   image,
@@ -27,7 +29,7 @@ const Card = ({
         </div>
       </div>
       <div>
-        <p className="m-2 text-first-color dark:text-second-color">{country}</p>
+        <p className="m-2 text-first-color dark:text-second-color font-semibold">{country}</p>
         <h6 className="m-2 font-medium italic text-third-color dark:text-seventh-color">
           {plan}
         </h6>
@@ -50,9 +52,7 @@ const Card = ({
           <span className="text-success">USD${price}</span>
         </div>
       </div>
-      <button className="hover:btn-primary transition-all duration-1000 border btn-style h-20 italic text-first-color dark:text-seventh-color">
-        MÁS INFORMACIÓN
-      </button>
+      <NestedModal destino={country}></NestedModal>  
     </div>
   );
 };

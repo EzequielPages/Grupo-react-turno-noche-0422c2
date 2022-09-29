@@ -9,7 +9,7 @@ const CardContainer = () => {
     <div className="bg-seventh-color dark:bg-fourth-color ">
       <h5 className="text-center italic text-first-color dark:text-seventh-color">Recorré el mundo <FontAwesomeIcon icon={faPlaneDeparture}/></h5>
       <h3 className="text-center font-medium text-first-color dark:text-second-color mb-4"><FontAwesomeIcon icon={faLocationDot}/> Tours más famosos</h3>
-    <section className="container mx-auto md:grid-flow-col-dense md:items-center sm:flex-row justify-center md:justify-evenly md:gap-2 sm:gap-1 items-center grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mb-6">
+    <section className="container mx-auto md:grid-flow-col-dense md:items-center sm:flex-row justify-center md:justify-evenly md:gap-2 sm:gap-1 items-center grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mb-6 lg:gap-7">
         <Card
         image = "/Media/Qatar.jpg"
         country = "QATAR"
@@ -40,7 +40,7 @@ const CardContainer = () => {
         <Card 
         image = "/Media/España.jpg"
         country = "ESPAÑA"
-        plan = "TOUR POR MADRID Y BARCELONA"
+        plan = "TOUR POR BARCELONA"
         duration = "10 DÍAS"
         reviews= "101"
         price= "3900"

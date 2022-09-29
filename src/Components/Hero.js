@@ -12,7 +12,7 @@ const Hero = () => {
         <div>
           <h2 className="text-5xl font-bold">Quienes Somos</h2>
           <h3 className="font-bold p-1 text-2xl text-fifth-color">
-            Responsabilidad Confianza y Seguridad Para Nuestros Clientes.
+            Responsabilidad, confianza y seguridad para nuestros clientes.
           </h3>
           <p className="py-6 text-base font-medium">
             TravelN es una agencia de viajes y turismo en Argentina, que se creó
