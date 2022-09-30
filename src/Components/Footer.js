@@ -60,7 +60,7 @@ const FooterV2 = () => {
                 <div className="mt-10 lg:hidden">
                     <label className="text-sm font-medium leading-5 text-thir dark:text-seventh-color">QUIERO OFERTAS <FontAwesomeIcon icon={faArrowDown} /></label>
                     <div className="flex items-center justify-between border border-gray-800 mt-4">
-                        <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none placeholder-gray-800" placeholder="Enter your email" />
+                        <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none placeholder-gray-800" placeholder="Ingrese su email" />
                         <div className="cursor-pointer mr-4 relative z-40">
                             <svg className="ml-2 fill-current text-third-color dark:text-seventh-color dark:hover:text-fifth-color" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
