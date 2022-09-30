@@ -49,7 +49,7 @@ const Card = ({
           <span className="m-1 text-first-color dark:text-seventh-color">
             {duration}
           </span>
-          <span className="text-success">USD${price}</span>
+          <span className="text-success">USD ${price}</span>
         </div>
       </div>
       <NestedModal destino={country}></NestedModal>  

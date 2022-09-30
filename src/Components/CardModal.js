@@ -60,7 +60,7 @@ export default function NestedModal({destino}) {
 
   return (
     <div className='flex justify-center'>
-      <Button variant='outlined' className='w-64 h-12 hover:btn-primary transition-all duration-1000 border btn-style italic text-first-color dark:text-seventh-color' onClick={handleOpen}>Seleccionar Fecha</Button>
+      <button variant='outlined' className='w-64 h-12 btn btn-primary text-sm font-medium' onClick={handleOpen}>Seleccionar Fecha</button>
       <Modal
         open={open}
         onClose={handleClose}
