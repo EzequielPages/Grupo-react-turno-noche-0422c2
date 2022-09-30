@@ -3,6 +3,7 @@ import Banner from "../src/Components/Banner.js";
 import NavBar from "../src/Components/NavBar.js";
 import Home from "./Components/Home.js";
 import CardContainer from "./Components/CardContainer.js";
+import Offers from "./Components/Offers.js";
 import Carousel from "./Components/Carousel.js";
 import Hero from "./Components/Hero.js";
 import Reviews from "./Components/Reviews.js";
@@ -24,6 +25,7 @@ export default function App() {
         <Hero />
         <Carousel />
         <CardContainer />
+        <Offers />
         <Reviews />
         <Share />
         <Footer/>
