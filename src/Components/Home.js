@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="hero min-h-screen" style={{ backgroundImage: `url("https://source.unsplash.com/1920x1080/?'travel')` }}>
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="w-full text-center text-neutral-content">
+      <div className=" text-center text-neutral-content justify-items-center">
         <div className="max-w-2xl lg:gap-2">
           <h1 className="mb-5 text-5xl font-bold text-second-color dark:text-second-night-color">¿A DONDE QUIERES VIAJAR?</h1>
           <p className="mb-5">
@@ -22,6 +22,8 @@ const Home = () => {
               <option>MADRID</option>
               <option>LONDRES</option>
               <option>QATAR</option>
+              <option>ITALIA</option>
+              <option>MIAMI</option>
             </select>
             <button className="btn btn-primary bg-seventh-color text-fourth-color dark:bg-third-night-color dark:text-seventh-night-color">Buscar Vuelos</button>
           </div> 
