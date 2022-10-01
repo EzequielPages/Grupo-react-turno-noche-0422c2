@@ -1,8 +1,8 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faStarHalf } from "@fortawesome/free-regular-svg-icons";
+// import { faStarHalf } from "@fortawesome/free-regular-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faLocationDot} from "@fortawesome/free-solid-svg-icons";
+// import { faLocationDot} from "@fortawesome/free-solid-svg-icons";
 
 
 
