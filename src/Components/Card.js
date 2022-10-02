@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStarHalf } from "@fortawesome/free-regular-svg-icons";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faLocationDot, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import "./Card.css";
+import CardModal from "./CardModal";
+import NestedModal from "./CardModal";
 
 const Card = ({
   image,
@@ -29,7 +29,7 @@ const Card = ({
         </div>
       </div>
       <div>
-        <p className="m-2 text-first-color dark:text-second-color">{country}</p>
+        <p className="m-2 text-first-color dark:text-second-color font-semibold">{country}</p>
         <h6 className="m-2 font-medium italic text-third-color dark:text-seventh-color">
           {plan}
         </h6>
@@ -41,7 +41,7 @@ const Card = ({
             <FontAwesomeIcon icon={faStar} className="text-second-color" />
             <FontAwesomeIcon icon={faStarHalf} className="text-second-color" />
           </div>
-          <p className="text-first-color dark:text-seventh-color">
+          <p className="text-first-color dark:text-seventh-color italic">
             {reviews} REVIEWS
           </p>
         </div>
@@ -49,12 +49,10 @@ const Card = ({
           <span className="m-1 text-first-color dark:text-seventh-color">
             {duration}
           </span>
-          <span className="text-success">USD${price}</span>
+          <span className="text-success">USD ${price}</span>
         </div>
       </div>
-      <button className="hover:btn-primary transition-all duration-1000 border btn-style h-20 italic text-first-color dark:text-seventh-color">
-        MÁS INFORMACIÓN
-      </button>
+      <NestedModal destino={country}></NestedModal>  
     </div>
   );
 };

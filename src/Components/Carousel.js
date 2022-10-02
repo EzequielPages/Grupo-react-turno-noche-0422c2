@@ -57,7 +57,7 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="p-8 space-x-6 rounded-box">
+    <div className="p-8 space-x-6 dark:bg-first-night-color dark:text-second-night-color">
       <h2 className="flex justify-center py-8 font-bold text-3xl">
         @TravelNViajes En Instagram
       </h2>

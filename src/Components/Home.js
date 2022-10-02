@@ -12,7 +12,7 @@ const Home = () => {
         <div className="max-w-2xl lg:gap-2">
           <h1 className="mb-5 text-5xl font-bold text-second-color dark:text-second-night-color">¿A DONDE QUIERES VIAJAR?</h1>
           <p className="mb-5">
-            En TravelN te ayudaremos a encontrar los mejores paquetes para que disfrutes tus proximas vacaciones!
+            En TravelN te ayudamos a encontrar los mejores paquetes para que disfrutes tus próximas vacaciones.
           </p>
           <div className='grid grid-cols-4 gap-16 md:gap-4 auto-cols-min'>
             <DatePicker disableToolbar disablePast label="DESDE" okLabel cancelLabel autoOk  className='bg-seventh-color' value={selectedFirstDate} onChange={setSelectedFirstDate} />
