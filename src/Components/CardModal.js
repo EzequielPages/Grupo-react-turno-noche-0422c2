@@ -4,6 +4,8 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import "./Card.css"
 import MaterialUIPickers from './CardDatePicker';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 const style = {
   position: 'absolute',
@@ -60,7 +62,7 @@ export default function NestedModal({destino}) {
 
   return (
     <div className='flex justify-center'>
-      <Button variant='outlined' className='w-64 h-12 hover:btn-primary transition-all duration-1000 border btn-style italic text-first-color dark:text-seventh-color' onClick={handleOpen}>Seleccionar Fecha</Button>
+      <button variant='outlined' className='w-64 h-12 btn btn-primary text-sm font-medium' onClick={handleOpen}>Seleccionar Fecha</button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -68,7 +70,12 @@ export default function NestedModal({destino}) {
         aria-describedby="parent-modal-description"
       >
         <Box className="modalSize" sx={{ ...style, width: 600 }}>
-          <h2 id="parent-modal-title" className='italic'>Tu viaje a {destino}</h2>
+          <div className='flex justify-between'>
+            <h2 id="parent-modal-title" className='italic'>Tu viaje a {destino}</h2>
+            <button>
+              <FontAwesomeIcon icon={faCircleXmark} className="text-error" onClick={handleClose} />
+            </button>
+          </div>
           <p id="parent-modal-description" className='mb-5'>
             Selecciona la fecha ideal para tu viaje
           </p>

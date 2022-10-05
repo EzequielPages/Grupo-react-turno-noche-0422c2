@@ -9,6 +9,7 @@ const Offers = () => {
         <img
           src={Oferta}
           className="rounded-lg shadow-2xl w-fit size-imageoffers"
+          alt="oferta"
         />
         <div>
           <h2 className="text-3xl font-bold parpadea text-center">Oferta de último momento</h2>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo1 from "..//asset/logo1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane, faPhone, faGift, faLocationDot, faCircleChevronDown, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import ToggleImg from './ToggleImg';
 
 
 const FooterV2 = () => {
@@ -11,9 +11,7 @@ const FooterV2 = () => {
             <div className="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4 bg-seventh-color dark:bg-third-night-color">
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-8">
                     <div className="flex flex-col flex-shrink-0 items-center mr-0 lg:mr-32">
-                        <div>
-                            <img src={Logo1} alt="logo" width={150} />
-                        </div>
+                       <ToggleImg />
                         <div className="flex items-center gap-x-4 mt-12">
                             <div className="w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center dark:text-seventh-night-color hover:text-fifth-color dark:hover:text-fifth-color">
                                 <a href='https://www.google.com.ar/maps/' target="_blank"> <FontAwesomeIcon icon={faLocationDot} /> </a>
@@ -60,7 +58,7 @@ const FooterV2 = () => {
                 <div className="mt-10 lg:hidden">
                     <label className="text-sm font-medium leading-5 text-thir dark:text-seventh-color">QUIERO OFERTAS <FontAwesomeIcon icon={faArrowDown} /></label>
                     <div className="flex items-center justify-between border border-gray-800 mt-4">
-                        <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none placeholder-gray-800" placeholder="Enter your email" />
+                        <input type="text" className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none placeholder-gray-800" placeholder="Ingrese su email" />
                         <div className="cursor-pointer mr-4 relative z-40">
                             <svg className="ml-2 fill-current text-third-color dark:text-seventh-color dark:hover:text-fifth-color" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
