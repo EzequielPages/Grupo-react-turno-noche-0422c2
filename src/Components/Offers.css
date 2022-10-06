@@ -6,6 +6,14 @@
     height: 435px;
     object-fit: cover;
 }
+    @media screen (max-width: 320px) {
+        .size-imageoffers {
+            width: 100%;
+            height: 100%;
+        } 
+        
+    }
+    
 .parpadea {
   
     animation-name: parpadeo;
