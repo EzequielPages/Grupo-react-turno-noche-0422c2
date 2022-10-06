@@ -1,5 +1,6 @@
 import React from 'react'
-import ProductoPrueba from "../../src/asset/argentina.jpg"
+import ShoppingCart from './ShoppingCart';
+import CartItem from "./CartItem";
 
 const CartWidget = () => {
   return (
@@ -14,14 +15,7 @@ const CartWidget = () => {
       <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-72 bg-base-100 shadow">
         <div className="card-body">
           <h4 className='text-xl'>Tus productos:</h4>
-            <div className='flex'>
-              <img className="w-28 h-28 rounded" src={ProductoPrueba}/>
-              <div className='flex flex-col justify-between ml-4'>
-              <h5 className='text-xl'>Tu viaje a {}</h5>
-              <span>$ {}</span>
-              </div>
-              <button className="flex flex-col justify-end">Eliminar</button>
-            </div>
+          <ShoppingCart />
           <button>Ir a pagar</button> 
         </div>
       </div>

@@ -1,4 +1,5 @@
-import { TYPES } from "../acciones/shoppingActions";
+import { TYPES } from "../actions/shoppingActions";
+
 
 export const shoppingInitialState = {
   products: [
@@ -71,3 +72,4 @@ export function shoppingReducer(state, action) {
       return state;
   }
 }
+

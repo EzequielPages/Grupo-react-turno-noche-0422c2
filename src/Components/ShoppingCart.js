@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { TYPES } from "../acciones/shoppingActions";
+import { TYPES } from "../actions/shoppingActions";
 import {
   shoppingInitialState,
   shoppingReducer,
