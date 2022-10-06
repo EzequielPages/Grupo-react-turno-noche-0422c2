@@ -12,7 +12,9 @@ const Offers = () => {
           alt="oferta"
         />
         <div>
+          <div className="offerStyle">
           <h2 className="text-3xl font-bold parpadea text-center">Oferta de último momento</h2>
+          </div>
           <h3 className="font-bold p-1 text-3xl text-fifth-color pt-1">
             EGIPTO - DUBAI
           </h3>
@@ -25,7 +27,7 @@ const Offers = () => {
           <span className="badge margin-rigth bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
           </div>  
 
-          <div className="grid grid-flow-col gap-4 text-center auto-cols-max pt-4">
+          <div className="grid grid-flow-col gap-1 md:gap-4 text-center auto-cols-max pt-4">
   <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color">
     <span className="countdown font-mono text-5xl">
       <span style={{"--value":15}}></span>
@@ -56,8 +58,10 @@ const Offers = () => {
           </p>
           <p className="py-6 text-base font-medium">
           Si lo que buscas es disfrutar de unas vacaciones que nunca olvidarás donde los lugares turísticos son los protagonistas, aquí te ofrecemos Viajes a Egipto y Dubai para que explores todas las maravillas de la civilización egipcia como Las Pirámides, la ciudadela y los templos famosos en Luxor y Aswan navegando por el Nilo a bordo de un crucero. Incluyendo un viaje a la estupenda Dubai explorando sus atracciones incluyendo un día increíbleen el  desierto. Todo esto con guía en español. ¡No te quedes por fuera y descúbrenos!
-          </p>        
+          </p> 
+          <div className="text-center">
           <button className="btn btn-primary font-medium">Mas Info</button>
+          </div>     
         </div>
       </div>
     </div>
