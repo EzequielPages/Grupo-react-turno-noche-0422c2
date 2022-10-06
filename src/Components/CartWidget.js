@@ -12,7 +12,7 @@ const CartWidget = () => {
           <span className="badge badge-sm indicator-item">0</span>
         </div>
       </label>
-      <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-72 bg-base-100 shadow">
+      <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-72 md:w-96 bg-base-100 shadow">
         <div className="card-body">
           <h4 className='text-xl'>Tus productos:</h4>
           <ShoppingCart />
