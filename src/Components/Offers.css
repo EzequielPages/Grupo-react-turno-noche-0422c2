@@ -1,10 +1,30 @@
+tuyo
+src/Components/Offers.css
+
 .margin-rigth{
     margin-right: 0.5rem;
 }
 .size-imageoffers{
-    width: 300px;
+    width: 300vh;
     height: 435px;
     object-fit: cover;
+}
+.color-badge{
+  background-color:#27AE60;
+  color:black;
+  font-size: 18px
+}
+.color-badge2{
+  background-color: #E74C3C;
+  color: black;
+  font-size: 18px;
+}
+.size-span-badge{
+  font-size: 11px;
+}
+.size-grid{
+  font-size: 23px;
+  text-align: right;
 }
 .parpadea {
   
@@ -36,6 +56,7 @@
     100% { opacity: 1.0; }
   }
 
+  
   @media only screen and (min-width: 550px){
     .size-imageoffers{
       width: 300vh;
