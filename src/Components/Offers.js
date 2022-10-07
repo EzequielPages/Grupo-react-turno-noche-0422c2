@@ -1,6 +1,7 @@
 import React from "react";
 import Oferta from "..//asset/offers2.jpg";
 import "./Offers.css";
+import CountdownTimer from "./CountdownTimer.js";
 
 const Offers = () => {
   return (
@@ -26,30 +27,7 @@ const Offers = () => {
           </div>  
 
           <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":15}}></span>
-    </span>
-    Días
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":10}}></span>
-    </span>
-    Hs.
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":24}}></span>
-    </span>
-    Min.
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":39}}></span>
-    </span>
-    Seg.
-  </div>
+  <CountdownTimer/>
 </div>                        
           <p className="py-6 text-base font-medium">
           ¿Está buscando un paquete a un precio increíblemente bajo? ¡En Travel N hemos ayudado a más de 1 
