@@ -9,15 +9,15 @@ const Home = () => {
     <div className="hero min-h-screen" style={{ backgroundImage: `url("https://source.unsplash.com/1920x1080/?'travel')` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className=" text-center text-neutral-content justify-items-center">
-        <div className="max-w-2xl lg:gap-2">
+        <div className="">
           <h1 className="mb-5 text-5xl font-bold text-second-color dark:text-second-night-color">¿A DONDE QUIERES VIAJAR?</h1>
           <p className="mb-5">
             En TravelN te ayudamos a encontrar los mejores paquetes para que disfrutes tus próximas vacaciones.
           </p>
-          <div className='grid grid-cols-4 gap-16 md:gap-4 auto-cols-min'>
-            <DatePicker disableToolbar disablePast label="DESDE" okLabel cancelLabel autoOk  className='bg-seventh-color' value={selectedFirstDate} onChange={setSelectedFirstDate} />
-            <DatePicker disableToolbar disablePast label="HASTA" okLabel cancelLabel autoOk  className='bg-seventh-color' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
-            <select className="select select-accent w-full max-w-xs  text-fourth-color dark:text-second-night-color">
+          <div className='grid lg:grid-cols-4 md:grid-rows-4 sm:grid-rows-4 md:gap-3 gap-y-4 w-full px-5'>
+            <DatePicker disableToolbar disablePast label="DESDE" okLabel cancelLabel autoOk  className='bg-seventh-color rounded-md' value={selectedFirstDate} onChange={setSelectedFirstDate} />
+            <DatePicker disableToolbar disablePast label="HASTA" okLabel cancelLabel autoOk  className='bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
+            <select className="select btn-primary text-center bg-seventh-color dark:bg-third-night-color dark:text-seventh-night-color select-accent w-full ">
               <option disabled selected>ELEGIR DESTINO</option>
               <option>MADRID</option>
               <option>LONDRES</option>
@@ -25,7 +25,7 @@ const Home = () => {
               <option>ITALIA</option>
               <option>MIAMI</option>
             </select>
-            <button className="btn btn-primary bg-seventh-color text-fourth-color dark:bg-third-night-color dark:text-seventh-night-color">Buscar Vuelos</button>
+            <button className="btn btn-primary bg-seventh-color dark:bg-third-night-color dark:text-seventh-night-color">Buscar Vuelos</button>
           </div> 
         </div>
       </div>
