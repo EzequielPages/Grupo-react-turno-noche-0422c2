@@ -1,6 +1,3 @@
-tuyo
-src/Components/Offers.css
-
 .margin-rigth{
     margin-right: 0.5rem;
 }
@@ -29,12 +26,12 @@ src/Components/Offers.css
 .parpadea {
   
     animation-name: parpadeo;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   
     -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
@@ -56,6 +53,10 @@ src/Components/Offers.css
     100% { opacity: 1.0; }
   }
 
+  .countdownStyle{
+    display: flex;
+    justify-content: center;
+  }
   
   @media only screen and (min-width: 550px){
     .size-imageoffers{
