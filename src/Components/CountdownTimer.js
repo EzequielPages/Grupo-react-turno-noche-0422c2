@@ -50,7 +50,7 @@ function CountdownTimer(){
           <span className="countdown font-mono text-5x1 size-grid">{countdownTime.countdownDays}</span>
           Días
         </div> 
-        <div className="flex-col flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
+        <div className="flex-col flex-col p-1 px-2 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
           <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownHours}</span>
           Hs.
         </div> 
