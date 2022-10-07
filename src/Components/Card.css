@@ -9,13 +9,6 @@
 .modalSize{
     height: 500px;
 }
-.btn-style{
-    margin: 30px;
-    border-color: #22353c !important;
-    color: #22353c !important;
-    border-radius: 50px !important;
-    height: 40px !important;
-}
 .info-style{
     margin: 30px;
 }
@@ -75,3 +68,10 @@
         border-radius: 0px;
     }
     }
+    @media only screen and (max-width: 550px){
+        .modalSize {
+            height: 500px;
+            width: 320px !important; 
+        }
+        }
+    

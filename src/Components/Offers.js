@@ -4,27 +4,28 @@ import "./Offers.css";
 
 const Offers = () => {
   return (
-      <div className="hero min-h-screen bg-base-100 dark:bg-third-night-color dark:text-seventh-night-color">
+    <div className="hero min-h-screen bg-base-100 dark:bg-third-night-color dark:text-seventh-night-color">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={Oferta}
           className="rounded-lg shadow-2xl w-fit size-imageoffers"
+          alt="none"
         />
         <div>
           <h2 className="text-3xl font-bold parpadea text-center">Oferta de último momento</h2>
           <h3 className="font-bold p-1 text-3xl text-fifth-color pt-1">
             EGIPTO - DUBAI
           </h3>
-          <div className="badge color-badge2 line-through font-bold margin-rigth py-3">$3600 
+          <div className="badge color-badge2 line-through font-bold margin-rigth py-3 mr-2">$3600 
           </div>
           <div className="badge color-badge font-bold py-3 my-1">$3200</div>
           <div>
-          <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
-          <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">+18</span>
+          <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
+          <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold">+18</span>
           <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
-        </div>    
+          </div>  
 
-        <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
+          <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
   <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
     <span className="countdown font-mono text-5xl size-grid pl-1">
       <span style={{"--value":15}}></span>
