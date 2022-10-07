@@ -4,7 +4,7 @@ import {
   shoppingInitialState,
   shoppingReducer,
 } from "../reducer/shoppingReducer";
-import Products from "./Products";
+import Products from "./CardModal";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
