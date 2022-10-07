@@ -1,6 +1,7 @@
 import React from "react";
 import Oferta from "..//asset/offers2.jpg";
 import "./Offers.css";
+import CountdownTimer from "./CountdownTimer.js";
 
 const Offers = () => {
   return (
@@ -13,6 +14,7 @@ const Offers = () => {
         />
         <div>
           <h2 className="text-3xl font-bold parpadea text-center">Oferta de último momento</h2>
+          <CountdownTimer/>
           <h3 className="font-bold p-1 text-3xl text-fifth-color pt-1">
             EGIPTO - DUBAI
           </h3>
@@ -23,34 +25,7 @@ const Offers = () => {
           <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
           <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold">+18</span>
           <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
-          </div>  
-
-          <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":15}}></span>
-    </span>
-    Días
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":10}}></span>
-    </span>
-    Hs.
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":24}}></span>
-    </span>
-    Min.
-  </div> 
-  <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-    <span className="countdown font-mono text-5xl size-grid pl-1">
-      <span style={{"--value":39}}></span>
-    </span>
-    Seg.
-  </div>
-</div>                        
+          </div>                      
           <p className="py-6 text-base font-medium">
           ¿Está buscando un paquete a un precio increíblemente bajo? ¡En Travel N hemos ayudado a más de 1 
           millón de viajeros a ahorrar miles de dólares con nuestros paquetes con descuento!
