@@ -24,9 +24,9 @@ const Offers = () => {
           </div>
           <div className="badge color-badge font-bold py-3 my-1">$3200</div>
           <div>
-          <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
-          <span className="badge margin-rigth mr-1 size-span-badge bg-seventh-color rounded-box text-first-color font-bold">+18</span>
-          <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
+          <span className="badge margin-rigth mr-1 size-span-badge color-badge3 bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
+          <span className="badge margin-rigth mr-1 size-span-badge color-badge3 bg-seventh-color rounded-box text-first-color font-bold">+18</span>
+          <span className="badge margin-rigth size-span-badge color-badge3 bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
           </div>                      
           <p className="py-6 text-base font-medium pb-1 text-justify">
           ¿Está buscando un paquete a un precio increíblemente bajo? ¡En Travel N hemos ayudado a más de 1 
@@ -40,7 +40,7 @@ const Offers = () => {
           atracciones incluyendo un día increíble en el  desierto. Todo esto con guía en español. 
           ¡No te quedes por fuera y descúbrenos!
           </p>    
-          <div className="text-center"> 
+          <div className="text-center element-style"> 
           <button className="btn btn-primary font-medium">Mas Info</button>
           </div>   
         </div>
