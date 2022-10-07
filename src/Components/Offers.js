@@ -4,7 +4,7 @@ import "./Offers.css";
 
 const Offers = () => {
   return (
-    <div className="hero min-h-screen bg-base-100 dark:bg-third-night-color dark:text-seventh-night-color">
+      <div className="hero min-h-screen bg-base-100 dark:bg-third-night-color dark:text-seventh-night-color">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={Oferta}
@@ -22,9 +22,9 @@ const Offers = () => {
           <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold" >15 DÍAS</span>
           <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">+18</span>
           <span className="badge margin-rigth size-span-badge bg-seventh-color rounded-box text-first-color font-bold">2 PERSONAS</span>  
-          </div>  
+        </div>    
 
-          <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
+        <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
   <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
     <span className="countdown font-mono text-5xl size-grid pl-1">
       <span style={{"--value":15}}></span>
@@ -70,4 +70,3 @@ const Offers = () => {
 };
 
 export default Offers;
-
