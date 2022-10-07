@@ -1,18 +1,11 @@
 import { TYPES } from "../actions/shoppingActions";
 
-
 export const shoppingInitialState = {
   products: [
     { id: 1, name: "Producto A", price: 500 },
     { id: 2, name: "Producto B", price: 200 },
     { id: 3, name: "Producto C", price: 350 },
     { id: 4, name: "Producto D", price: 300 },
-    { id: 5, name: "Producto E", price: 400 },
-    { id: 6, name: "Producto F", price: 470 },
-    { id: 7, name: "Producto G", price: 600 },
-    { id: 8, name: "Producto H", price: 450 },
-    { id: 9, name: "Producto I", price: 380 },
-    { id: 10, name: "Producto J", price: 250 },
   ],
   cart: [],
 };
@@ -20,6 +13,7 @@ export const shoppingInitialState = {
 export function shoppingReducer(state, action) {
   switch (action.type) {
     case TYPES.ADD_TO_CART: {
+      console.log(action.payload);
       let newItem = state.products.find(
         (product) => product.id === action.payload
       );
@@ -72,4 +66,3 @@ export function shoppingReducer(state, action) {
       return state;
   }
 }
-
