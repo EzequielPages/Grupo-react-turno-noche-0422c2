@@ -6,15 +6,32 @@
     height: 435px;
     object-fit: cover;
 }
+.color-badge{
+  background-color:#27AE60;
+  color:black;
+  font-size: 18px
+}
+.color-badge2{
+  background-color: #E74C3C;
+  color: black;
+  font-size: 18px;
+}
+.size-span-badge{
+  font-size: 11px;
+}
+.size-grid{
+  font-size: 23px;
+  text-align: right;
+}
 .parpadea {
   
     animation-name: parpadeo;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   
     -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
@@ -35,4 +52,20 @@
      50% { opacity: 0.0; }
     100% { opacity: 1.0; }
   }
+
+  .countdownStyle{
+    display: flex;
+    justify-content: center;
+  }
   
+  @media only screen and (min-width: 550px){
+    .size-imageoffers{
+      width: 300vh;
+      height: 435px;
+      object-fit: cover;
+      }
+    .offerStyle{
+      display: flex;
+      justify-content: center;
+    }
+    }
