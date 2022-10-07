@@ -52,6 +52,12 @@
      50% { opacity: 0.0; }
     100% { opacity: 1.0; }
   }
+
+  .countdownStyle{
+    display: flex;
+    justify-content: center;
+  }
+  
   @media only screen and (min-width: 550px){
     .size-imageoffers{
       width: 300vh;

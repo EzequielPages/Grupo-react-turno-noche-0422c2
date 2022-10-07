@@ -43,7 +43,7 @@ function CountdownTimer(){
      });
     
      return(
-        <div className="grid grid-flow-col gap-1 md:gap-4 text-center auto-cols-max pt-3">
+        <div className="grid grid-flow-col gap-1 md:gap-4 text-center auto-cols-max pt-3 countdownStyle">
        {expiryTime!==false?
        <>
         <div className="flex-col flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
