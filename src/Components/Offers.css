@@ -9,15 +9,23 @@
 .color-badge{
   background-color:#27AE60;
   color:black;
-  font-size: 18px
+  font-size: 18px;
+  border-color: #6f4837;
 }
 .color-badge2{
   background-color: #E74C3C;
   color: black;
   font-size: 18px;
+  border-color: #6f4837;
 }
 .size-span-badge{
   font-size: 11px;
+}
+.color-badge3{
+  border-color: #6f4837;
+}
+.element-style{
+  float: right
 }
 .size-grid{
   font-size: 23px;
