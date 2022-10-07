@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function CountdownTimer(){
-    const [expiryTime, setExpiryTime] = useState("30 oct 2022 00:00:25");
+    const [expiryTime, setExpiryTime] = useState("20 oct 2022 00:00:00");
     const [countdownTime, setCountdownTime]= useState(
         {
             countdownDays:'',
@@ -43,27 +43,27 @@ function CountdownTimer(){
      });
     
      return(
-        <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-4">
+        <div className="grid grid-flow-col gap-2 text-center auto-cols-max pt-3 px-48">
        {expiryTime!==false?
        <>
-        <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-          <span className="countdown font-mono text-5xl size-grid pl-1">{countdownTime.countdownDays}</span>
+        <div className="flex-col flex-col p-1 py-2 bg-third-color rounded-box text-second-color w-12 h-15">
+          <span className="countdown font-mono text-5x1 size-grid">{countdownTime.countdownDays}</span>
           Días
         </div> 
-        <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-          <span className="countdown font-mono text-5xl size-grid pl-1">{countdownTime.countdownHours}</span>
+        <div className="flex-col flex-col p-1 py-2 bg-third-color rounded-box text-second-color w-12 h-15">
+          <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownHours}</span>
           Hs.
         </div> 
-        <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-          <span className="countdown font-mono text-5xl size-grid pl-1">{countdownTime.countdownMinutes}</span>
+        <div className="flex-col flex-col p-1 py-2 bg-third-color rounded-box text-second-color w-12 h-15">
+          <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownMinutes}</span>
           Min.
         </div> 
-        <div className="flex flex-col p-2 bg-third-color rounded-box text-second-color w-12 h-14">
-          <span className="countdown font-mono text-5xl size-grid pl-1">{countdownTime.countdownSeconds}</span>
+        <div className="flex-col flex-col p-1 py-2 bg-third-color rounded-box text-second-color w-12 h-15">
+          <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownSeconds}</span>
           Seg.
         </div>
         </>
-          :<p>Deal has been Expired</p>}
+          :<p className="font-bold">Proximamente nuevas ofertas!</p>}
         </div>
      )
  }
