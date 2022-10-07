@@ -1,4 +1,14 @@
+
+.datepicker {
+  text-align: center !important;
+}
+
 .Main {
   background-color: #F6F5F5;
   height: 100vh;
 }
+
+.select {
+  color: black;
+}
+

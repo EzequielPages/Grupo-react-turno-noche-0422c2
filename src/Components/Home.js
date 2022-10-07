@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {DatePicker} from "@material-ui/pickers";
+import { textAlign } from '@mui/system';
 
 const Home = () => {
   const [selectedFirstDate, setSelectedFirstDate] = useState(new Date())
@@ -15,9 +16,17 @@ const Home = () => {
             En TravelN te ayudamos a encontrar los mejores paquetes para que disfrutes tus próximas vacaciones.
           </p>
           <div className='grid lg:grid-cols-4 md:grid-rows-4 sm:grid-rows-4 md:gap-3 gap-y-4 w-full px-5'>
-            <DatePicker disableToolbar disablePast label="DESDE" okLabel cancelLabel autoOk  className='bg-seventh-color rounded-md' value={selectedFirstDate} onChange={setSelectedFirstDate} />
-            <DatePicker disableToolbar disablePast label="HASTA" okLabel cancelLabel autoOk  className='bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
-            <select className="select btn-primary text-center bg-seventh-color dark:bg-third-night-color dark:text-seventh-night-color select-accent w-full ">
+            <DatePicker disableToolbar inputProps={{
+          style: {
+            textAlign: "center" 
+            },
+        }} disablePast label="." okLabel cancelLabel autoOk  className=' bg-seventh-color rounded-md' value={selectedFirstDate} onChange={setSelectedFirstDate} />
+            <DatePicker disableToolbar inputProps={{
+          style: {
+            textAlign: "center"
+            },
+        }} disablePast label="." okLabel cancelLabel autoOk  className=' bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
+            <select className="select select-bordered text-center select-accent w-full ">
               <option disabled selected>ELEGIR DESTINO</option>
               <option>MADRID</option>
               <option>LONDRES</option>
