@@ -20,11 +20,11 @@ const Share = () => {
 
     const shareUrl = 'http://www.google.com.ar/'
 
-    // 
+    // " https://i.imgur.com/Y76wfux.png
     return (
         <>
             <div class='bg-third-color text-seventh-color dark:bg-sixth-color dark:text-seventh-night-color' style={{
-                backgroundImage: `url('https://i.imgur.com/Y76wfux.png')`
+                backgroundImage: `url("https://source.unsplash.com/1920x300/?'travel'")`
             }}>
                 <div class='text-center'><p class='font-bold underline'>COMPARTIR</p></div>
                 <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
