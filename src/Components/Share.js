@@ -23,7 +23,7 @@ const Share = () => {
     return (
         <>
             <div style={{
-                backgroundImage: `url("https://source.unsplash.com/1920x200/?'travel'")`
+                backgroundImage: `url("https://source.unsplash.com/1920x200/?'abstract'")`
             }}>
                 <div class='text-center'><p class='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-color dark:text-fifth-night-color'>COMPARTIR</p></div>
                 <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
