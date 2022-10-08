@@ -24,13 +24,13 @@ const NavBar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
-            <a href='link'>HOME</a>
+            <a href='link' className='hover:text-seventh-color'>HOME</a>
           </li>
           <li tabIndex={0}>
-            <a href='link'>PAQUETES</a>
+            <a href='link' className='hover:text-seventh-color'>PAQUETES</a>
           </li>
           <li>
-            <a href='link'>CONTACTO</a>
+            <a href='link' className='hover:text-seventh-color'>CONTACTO</a>
           </li>
         </ul>
       </div>
