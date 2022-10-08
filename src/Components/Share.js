@@ -26,7 +26,7 @@ const Share = () => {
             <div class='bg-third-color text-seventh-color dark:bg-sixth-color dark:text-seventh-night-color' style={{
                 backgroundImage: `url("https://source.unsplash.com/1920x300/?'travel'")`
             }}>
-                <div class='text-center'><p class='font-bold underline'>COMPARTIR</p></div>
+                <div class='text-center'><p class='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-night-color dark:text-sixth-color'>COMPARTIR</p></div>
                 <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
                     <FacebookShareButton url={shareUrl}>
                         <FacebookIcon size={40} round={true} />
