@@ -27,7 +27,7 @@ const Share = () => {
                 backgroundImage: `url('https://i.imgur.com/Y76wfux.png')`
             }}>
                 <div class='text-center'><p class='font-bold underline'>COMPARTIR</p></div>
-                <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-20'>
+                <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
                     <FacebookShareButton url={shareUrl}>
                         <FacebookIcon size={40} round={true} />
                     </FacebookShareButton>
