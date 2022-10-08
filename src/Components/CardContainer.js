@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-const CardContainer = ({ Card }) => {
+const CardContainer = () => {
   return (
     <div className="bg-base-200 dark:bg-fourth-color pt-10 pb-12">
       <h5 className="text-center text-4xl font-bold text-first-color dark:text-seventh-color pb-2">
