@@ -8,25 +8,25 @@ import Products from "./CardModal";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
-  const [state, dispach] = useReducer(shoppingReducer, shoppingInitialState);
+  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
   const { products, cart } = state;
 
   const addToCart = (id) => {
-    dispach({ type: TYPES.ADD_TO_CART, payload: id });
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
   const deleteFromCart = (id, all = false) => {
     console.log(id, all);
     if (all) {
-      dispach({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
+      dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
     } else {
-      dispach({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
+      dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
     }
   };
 
   const clearCart = () => {
-    dispach({ type: TYPES.CLEAR_CART });
+    dispatch({ type: TYPES.CLEAR_CART });
   };
 
   return (

@@ -5,9 +5,6 @@ import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { shoppingInitialState } from "../reducer/shoppingReducer";
 
-const {id, image, country, plan, reviews, duration, price, textDeploy} = shoppingInitialState.products;
-
-
 const CardContainer = () => {
   return (
     <div className="bg-base-200 dark:bg-fourth-color px-4 py-4">
