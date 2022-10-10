@@ -3,6 +3,7 @@ import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { shoppingInitialState} from "../reducer/shoppingReducer";
 
 const CardContainer = () => {
   return (
@@ -15,9 +16,18 @@ const CardContainer = () => {
         Tours más famosos
       </h3>
       <section className="container mx-auto md:grid-flow-col-dense md:items-center sm:flex-row justify-center md:justify-evenly md:gap-2 sm:gap-1 items-center grid md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 mb-6 lg:gap-7">
-        {/* {Card.map((Card) => (
-          <Card key={Card.id} Card={Card} addToCart={addToCart} />
-        ))} */}
+        {shoppingInitialState.products.map((product) => (
+          <Card
+            key={product.id} 
+            image={product.image} 
+            country={product.country} 
+            plan={product.plan}
+            duration={product.duration}
+            reviews={product.reviews}
+            price={product.price}
+            textDeploy={product.textDeploy} 
+            />
+        ))}
       </section>
     </div>
   );
