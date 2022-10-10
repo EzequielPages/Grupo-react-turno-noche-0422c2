@@ -20,12 +20,12 @@ const Home = () => {
           style: {
             textAlign: "center" 
             },
-        }} disablePast label="." okLabel cancelLabel autoOk  className=' bg-seventh-color rounded-md' value={selectedFirstDate} onChange={setSelectedFirstDate} />
+        }} disablePast label="." autoOk className=' bg-seventh-color rounded-md' value={selectedFirstDate} onChange={setSelectedFirstDate} />
             <DatePicker disableToolbar inputProps={{
           style: {
             textAlign: "center"
             },
-        }} disablePast label="." okLabel cancelLabel autoOk  className=' bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
+        }} disablePast label="." autoOk className=' bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
             <select className="select select-bordered text-center select-accent w-full ">
               <option disabled selected>ELEGIR DESTINO</option>
               <option>MADRID</option>
