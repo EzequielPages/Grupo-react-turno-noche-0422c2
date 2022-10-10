@@ -15,7 +15,7 @@ const CardContainer = () => {
         <FontAwesomeIcon icon={faLocationDot} className="text-second-color" />
         Tours más famosos
       </h3>
-      <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-4 sm:gap-8">
+      <section className="grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-4 sm:gap-8">
            {shoppingInitialState.products.map((product) => (
             <Card
               key={product.id} 
@@ -26,7 +26,6 @@ const CardContainer = () => {
               reviews={product.reviews}
               price={product.price}
               textDeploy={product.textDeploy}
-              
               />
           ))}
       </section>
