@@ -10,10 +10,10 @@ import NestedModal from "./CardModal";
 
 const Card = ({image, id, country, plan, reviews, duration, price, textDeploy,}) => {
   return (
-    <div className="border-2 border-first-color dark:border-first-night-color md:shadow-first-color md:shadow-md bg-seventh-color dark:bg-first-night-color flex flex-col justify-start lg:w-auto card-size md:rounded-3xl sm:rounded-3xl zoomEfect ">
+    <div className="border-2 border-first-color dark:border-first-night-color md:shadow-first-color md:shadow-md bg-seventh-color dark:bg-first-night-color flex flex-col card-size sm:rounded-3xl md:rounded-3xl zoomEfect">
       <div className="containerAnimated">
         <img
-          className="overflow-hidden size-image imageAnimated md:rounded-tl-3xl sm:rounded-3xl md:rounded-tr-3xl imgCardRadius"
+          className="overflow-hidden size-image imageAnimated md:rounded-tl-3xl sm:rounded-3xl md:rounded-tr-3xl"
           src={image}
           alt="ciudad"
         />
