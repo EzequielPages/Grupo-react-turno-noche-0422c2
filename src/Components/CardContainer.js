@@ -18,7 +18,8 @@ const CardContainer = () => {
         <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-4 sm:gap-8 gap-y-4">
             {shoppingInitialState.products.map((product) => (
               <Card
-                key={product.id} 
+                key={product.id}
+                quantity = {product.quantity}
                 image={product.image} 
                 country={product.country} 
                 plan={product.plan}
