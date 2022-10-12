@@ -1,9 +1,14 @@
+
+
+
+
 const Products = ({ data, addToCart }) => {
-  const { id, name, price } = data;
+  const { id, image, country, price } = data;
 
   return (
     <div className="products">
-      <h4>{name}</h4>
+      <img className="w-28 h-28 rounded" src={image}/>
+      <h4>{country}</h4>
       <h5>$ {price}</h5>
       <button onClick={() => addToCart(id)}>Agregar</button>
     </div>

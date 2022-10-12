@@ -1,10 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faStar,
-  faLocationDot,
-  faStarHalf,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStar, faLocationDot, faStarHalf,} from "@fortawesome/free-solid-svg-icons";
 import "./Card.css";
 import NestedModal from "./CardModal";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import ShoppingCart from "./ShoppingCart";
-import CartItem from "./CartItem";
+
 
 const CartWidget = () => {
   return (
@@ -18,7 +18,7 @@ const CartWidget = () => {
           <div className="card-body">
             <h4 className="text-xl">Tus productos:</h4>
             <ShoppingCart/>
-            <button>Ir a pagar</button>
+            <button className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color">Ir a pagar</button>
           </div>
         </div>
       </div>

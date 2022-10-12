@@ -48,31 +48,29 @@ export const shoppingInitialState = {
     },
   ],
   cart: [{
-    id: 3,
-    image: Cataratas,
-    country: "ARGENTINA",
-    plan: "VISITÁ LAS CATARATAS",
-    duration: "7 DÍAS",
-    reviews: "129",
-    price: 790,
-    textDeploy: "MISIONES",
+    id: 1,
+    image: QatarCard,
+    country: "QATAR",
+    plan: "FIFA WORLD CUP 2022",
+    duration: "21 DÍAS",
+    reviews: "31",
+    price: 5500,
+    textDeploy: "DOHA",
   }],
 };
 
 export function shoppingReducer(state, action) {
   switch (action.type) {
     case TYPES.ADD_TO_CART: {
-      console.log(action.payload);
-      let newItem = state.products.find(
+      const newItem = state.products.find(
         (product) => product.id === action.payload
       );
-      console.log(newItem);
 
-      let itemInCart = state.cart.find((item) => item.id === newItem.id);
+      const itemInCart = state.cart.find((item) => item.id === newItem.id);
       return itemInCart
         ? {
             ...state,
-            cart: state.cart.map((item) =>
+            cart: state.cart.map(item =>
               item.id === newItem.id
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
@@ -84,13 +82,12 @@ export function shoppingReducer(state, action) {
           };
     }
     case TYPES.REMOVE_ONE_PRODUCT: {
-      let itemToDelete = state.cart.find((item) => item.id === action.payload);
-      console.log(itemToDelete);
+      const itemToDelete = state.cart.find(item => item.id === action.payload);
 
       return itemToDelete.quantity > 1
         ? {
             ...state,
-            cart: state.cart.map((item) =>
+            cart: state.cart.map(item =>
               item.id === action.payload
                 ? { ...item, quantity: item.quantity - 1 }
                 : item
@@ -98,7 +95,7 @@ export function shoppingReducer(state, action) {
           }
         : {
             ...state,
-            cart: state.cart.filter((item) => item.id !== action.payload),
+            cart: state.cart.filter(item => item.id !== action.payload),
           };
     }
     case TYPES.REMOVE_ALL_PRODUCTS: {

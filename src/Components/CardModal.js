@@ -7,10 +7,7 @@ import MaterialUIPickers from "./CardDatePicker";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { useReducer } from "react";
-import {
-  shoppingReducer,
-  shoppingInitialState,
-} from "../reducer/shoppingReducer";
+import { shoppingReducer, shoppingInitialState,} from "../reducer/shoppingReducer";
 import { TYPES } from "..//actions/shoppingActions";
 
 const style = {
@@ -52,7 +49,7 @@ function ChildModal({ addToCart, id }) {
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description">
         <Box className="text-center" sx={{ ...style, width: 200 }}>
-          <p id="child-modal-description" className="mb-2 text-center italic">
+          <p className="mb-2 text-center italic">
             ¿Está seguro que desea agregar esto al carrito?
           </p>
           <Button className="mb-2 italic" onClick={() => addToCart(id)}>
@@ -68,7 +65,6 @@ export default function NestedModal({ destino, id }) {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
   const addToCart = (id) => {
-    console.log(id);
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
   const [open, setOpen] = React.useState(false);
@@ -81,9 +77,7 @@ export default function NestedModal({ destino, id }) {
 
   return (
     <div className="flex justify-center">
-      <button
-        variant="outlined"
-        className="w-64 h-12 btn btn-primary text-sm font-medium"
+      <button variant="outlined" className="w-64 h-12 btn btn-primary text-sm font-medium"
         onClick={handleOpen}>
         Seleccionar Fecha
       </button>
