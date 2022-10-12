@@ -1,6 +1,9 @@
 import { useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
-import { shoppingInitialState, shoppingReducer,} from "../reducer/shoppingReducer";
+import {
+  shoppingInitialState,
+  shoppingReducer,
+} from "../reducer/shoppingReducer";
 import Products from "./CardModal";
 import CartItem from "./CartItem";
 
@@ -27,20 +30,16 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <h2>Carrito de Compras</h2>
-      <h3>Productos</h3>
-      <div className="">
-        {products.map((product) => 
-          <Products key={products.id} data={product} addToCart={addToCart} />
-        )}
-      </div>
-      <h3>Carrito</h3>
       <div className="box">
-        {cart.map((item, index) => 
+        {cart.map((item, index) => (
           <CartItem key={index} data={item} deleteFromCart={deleteFromCart} />
-        )}
+        ))}
       </div>
-      <button className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color" onClick={clearCart}>limpiar Carrito</button>
+      <button
+        className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
+        onClick={clearCart}>
+        limpiar Carrito
+      </button>
     </>
   );
 };
