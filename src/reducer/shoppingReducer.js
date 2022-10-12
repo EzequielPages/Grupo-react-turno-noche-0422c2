@@ -1,8 +1,8 @@
 import { TYPES } from "../actions/shoppingActions";
-import QatarCard from "../asset/QatarCard.jpg"
-import Cataratas from "../asset/Cataratas.jpg"
-import España from "../asset/España.jpg"
-import Sudafrica from "../asset/Sudafrica.jpg"
+import QatarCard from "../asset/QatarCard.jpg";
+import Cataratas from "../asset/Cataratas.jpg";
+import España from "../asset/España.jpg";
+import Sudafrica from "../asset/Sudafrica.jpg";
 
 export const shoppingInitialState = {
   products: [
@@ -47,16 +47,28 @@ export const shoppingInitialState = {
       textDeploy: "SAGRADA FAMILIA",
     },
   ],
-  cart: [{
-    id: 1,
-    image: QatarCard,
-    country: "QATAR",
-    plan: "FIFA WORLD CUP 2022",
-    duration: "21 DÍAS",
-    reviews: "31",
-    price: 5500,
-    textDeploy: "DOHA",
-  }],
+  cart: [
+    {
+      id: 1,
+      image: QatarCard,
+      country: "QATAR",
+      plan: "FIFA WORLD CUP 2022",
+      duration: "21 DÍAS",
+      reviews: "31",
+      price: 5500,
+      textDeploy: "DOHA",
+    },
+    {
+      id: 4,
+      image: España,
+      country: "ESPAÑA",
+      plan: "TOUR POR BARCELONA",
+      duration: "10 DÍAS",
+      reviews: "101",
+      price: 3900,
+      textDeploy: "SAGRADA FAMILIA",
+    },
+  ],
 };
 
 export function shoppingReducer(state, action) {
@@ -70,7 +82,7 @@ export function shoppingReducer(state, action) {
       return itemInCart
         ? {
             ...state,
-            cart: state.cart.map(item =>
+            cart: state.cart.map((item) =>
               item.id === newItem.id
                 ? { ...item, quantity: item.quantity + 1 }
                 : item
@@ -82,12 +94,14 @@ export function shoppingReducer(state, action) {
           };
     }
     case TYPES.REMOVE_ONE_PRODUCT: {
-      const itemToDelete = state.cart.find(item => item.id === action.payload);
+      const itemToDelete = state.cart.find(
+        (item) => item.id === action.payload
+      );
 
       return itemToDelete.quantity > 1
         ? {
             ...state,
-            cart: state.cart.map(item =>
+            cart: state.cart.map((item) =>
               item.id === action.payload
                 ? { ...item, quantity: item.quantity - 1 }
                 : item
@@ -95,7 +109,7 @@ export function shoppingReducer(state, action) {
           }
         : {
             ...state,
-            cart: state.cart.filter(item => item.id !== action.payload),
+            cart: state.cart.filter((item) => item.id !== action.payload),
           };
     }
     case TYPES.REMOVE_ALL_PRODUCTS: {
