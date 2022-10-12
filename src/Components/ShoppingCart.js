@@ -33,7 +33,7 @@ const ShoppingCart = () => {
     <>
       <h2>Carrito de Compras</h2>
       <h3>Productos</h3>
-      <div className="box-grid-responsive">
+      <div className="box grid-responsive">
         {products.map((product) => (
           <Products key={products.id} data={product} addToCart={addToCart} />
         ))}

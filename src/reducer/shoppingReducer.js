@@ -1,49 +1,62 @@
 import { TYPES } from "../actions/shoppingActions";
+import QatarCard from "../asset/QatarCard.jpg"
+import Cataratas from "../asset/Cataratas.jpg"
+import España from "../asset/España.jpg"
+import Sudafrica from "../asset/Sudafrica.jpg"
 
 export const shoppingInitialState = {
   products: [
     {
       id: 1,
-      image: "/Media/Qatar.jpg",
+      image: QatarCard,
       country: "QATAR",
       plan: "FIFA WORLD CUP 2022",
       duration: "21 DÍAS",
       reviews: "31",
-      price: "5500",
+      price: 5500,
       textDeploy: "DOHA",
     },
     {
       id: 2,
-      image: "/Media/Sudafrica.jpg",
+      image: Sudafrica,
       country: "SUDÁFRICA",
       plan: "CONOCÉ LA SABANA",
       duration: "9 DÍAS",
       reviews: "92",
-      price: "1900",
+      price: 1900,
       textDeploy: "SABI SABI",
     },
     {
       id: 3,
-      image: "/Media/Cataratas.jpg",
+      image: Cataratas,
       country: "ARGENTINA",
       plan: "VISITÁ LAS CATARATAS",
       duration: "7 DÍAS",
       reviews: "129",
-      price: "790",
+      price: 790,
       textDeploy: "MISIONES",
     },
     {
       id: 4,
-      image: "/Media/España.jpg",
+      image: España,
       country: "ESPAÑA",
       plan: "TOUR POR BARCELONA",
       duration: "10 DÍAS",
       reviews: "101",
-      price: "3900",
+      price: 3900,
       textDeploy: "SAGRADA FAMILIA",
     },
   ],
-  cart: [],
+  cart: [{
+    id: 3,
+    image: Cataratas,
+    country: "ARGENTINA",
+    plan: "VISITÁ LAS CATARATAS",
+    duration: "7 DÍAS",
+    reviews: "129",
+    price: 790,
+    textDeploy: "MISIONES",
+  }],
 };
 
 export function shoppingReducer(state, action) {
