@@ -1,0 +1,25 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "country": "Qatar",
+        "price": "U$5500",
+        "quantity": 1,
+        "image": ""
+      },
+      {
+        "id": 2,
+        "country": "España",
+        "price": "U$3900",
+        "quantity": 1,
+        "image": ""
+      },
+      {
+        "id": 3,
+        "country": "Argentina",
+        "price": "U$790",
+        "quantity": 1,
+        "image": ""
+      }
+    ]
+}
