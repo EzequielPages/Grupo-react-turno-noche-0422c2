@@ -2,24 +2,14 @@
     "items": [
       {
         "id": 1,
-        "country": "Qatar",
-        "price": "U$5500",
-        "quantity": 1,
-        "image": ""
-      },
-      {
-        "id": 2,
-        "country": "España",
-        "price": "U$3900",
-        "quantity": 1,
-        "image": ""
-      },
-      {
-        "id": 3,
-        "country": "Argentina",
-        "price": "U$790",
-        "quantity": 1,
-        "image": ""
+        "image": "QatarCard",
+        "country": "QATAR",
+        "plan": "FIFA WORLD CUP 2022",
+        "duration": "21 DÍAS",
+        "reviews": "31",
+        "quantity": 2,
+        "price": 5500,
+        "textDeploy": "DOHA"
       }
     ]
 }
