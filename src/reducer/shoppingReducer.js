@@ -48,7 +48,7 @@ export const shoppingInitialState = {
       reviews: "101",
       price: 3900,
       quantity: 2,
-      textDeploy: "SAGRADA FAMILIA",
+      textDeploy: " SAG. FAMILIA",
     },
   ],
   cart: [
