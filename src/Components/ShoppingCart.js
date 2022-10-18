@@ -1,16 +1,13 @@
 import { useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
-import {
-  shoppingInitialState,
-  shoppingReducer,
+import { shoppingInitialState, shoppingReducer,
 } from "../reducer/shoppingReducer";
-import Products from "./CardModal";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
   const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
 
-  const { products, cart } = state;
+  const { cart } = state;
 
   const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
@@ -40,6 +37,7 @@ const ShoppingCart = () => {
         onClick={clearCart}>
         limpiar Carrito
       </button>
+      <button onClick={ () => addToCart(2) }>Agregar</button>
     </>
   );
 };

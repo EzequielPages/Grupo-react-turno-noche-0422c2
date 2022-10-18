@@ -6,9 +6,6 @@ import "./Card.css";
 import MaterialUIPickers from "./CardDatePicker";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
-import { useReducer } from "react";
-import { shoppingReducer, shoppingInitialState,} from "../reducer/shoppingReducer";
-import { TYPES } from "..//actions/shoppingActions";
 
 const style = {
   position: "absolute",
@@ -24,7 +21,7 @@ const style = {
   pb: 3,
 };
 
-function ChildModal({ addToCart, id }) {
+function ChildModal({ addToCart, id}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -61,12 +58,8 @@ function ChildModal({ addToCart, id }) {
   );
 }
 
-export default function NestedModal({ destino, id }) {
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
-
-  const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
+export default function NestedModal({ destino, id , addToCart}) {
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -90,7 +83,7 @@ export default function NestedModal({ destino, id }) {
           <div className="flex justify-between">
             <h2 id="parent-modal-title" className="italic">
               Tu viaje a {destino}
-            </h2>
+            </h2>            
             <button>
               <FontAwesomeIcon
                 icon={faCircleXmark}
