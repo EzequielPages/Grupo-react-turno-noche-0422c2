@@ -1,11 +1,12 @@
-import { useReducer } from "react";
+import { useContext, useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
+import { CartContext } from "../reducer/cartContext";
 import { shoppingInitialState, shoppingReducer,
 } from "../reducer/shoppingReducer";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+  const [state, dispatch] = useContext(CartContext)
 
   const { cart } = state;
 
@@ -37,7 +38,6 @@ const ShoppingCart = () => {
         onClick={clearCart}>
         limpiar Carrito
       </button>
-      <button onClick={ () => addToCart(2) }>Agregar</button>
     </>
   );
 };

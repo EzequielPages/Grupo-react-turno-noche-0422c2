@@ -48,7 +48,8 @@ Gracias!</p>
       <div class="lg:w-1/3 lg:mb-0 p-4">
         <div class="h-full text-center">
           <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 shadow-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"></img>
-          <p class="leading-relaxed">La mejor agencia de viajes, confiable y segura, en todas mis reservas no he tenido problema alguno.</p>
+          <p class="leading-relaxed">La mejor agencia de viajes, confiable y segura, en todas mis reservas no he tenido problema alguno.
+          Siempre elijo viajar con TravelN</p>
           <ul class="flex justify-center pt-10">
                 <FontAwesomeIcon icon={faStar} className="text-second-color"/>
                 <FontAwesomeIcon icon={faStar} className="text-second-color"/>
