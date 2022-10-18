@@ -14,7 +14,7 @@ const NavBar = () => {
               <a href='link'>HOME</a>
             </li>
             <li tabIndex={2}>
-              <a className="justify-between" href='link'>PAQUETES</a>
+              <a className="justify-between" href='Paquetes'>PAQUETES</a>
             </li>
             <li><a href='link'>CONTACTO</a></li>
           </ul>
@@ -27,7 +27,7 @@ const NavBar = () => {
             <a href='link' className='hover:text-seventh-color'>HOME</a>
           </li>
           <li tabIndex={0}>
-            <a href='link' className='hover:text-seventh-color'>PAQUETES</a>
+            <a href='Paquetes' className='hover:text-seventh-color'>PAQUETES</a>
           </li>
           <li>
             <a href='link' className='hover:text-seventh-color'>CONTACTO</a>

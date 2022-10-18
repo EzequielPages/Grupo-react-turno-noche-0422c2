@@ -1,13 +1,29 @@
 import React from "react";
+import { useReducer , useEffect } from "react";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { shoppingInitialState } from "../reducer/shoppingReducer";
+import { shoppingInitialState, shoppingReducer } from "../reducer/shoppingReducer";
+import { TYPES } from "../actions/shoppingActions";
 
 const CardContainer = () => {
+ const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+
+ const { products , cart } = state
+
+ const addToCart = (id) => {
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+  };
+
+  useEffect(() => {
+    console.log(cart)
+   
+  }, [cart])
+  
+
   return (
-    <div className="bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
+    <div className="Paquetes bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
       <h5 className="text-center text-4xl font-bold text-first-color dark:text-seventh-color pb-2">
         Recorré el mundo <FontAwesomeIcon icon={faPlaneDeparture} />
       </h5>
@@ -16,25 +32,20 @@ const CardContainer = () => {
       </h3>
       <div className="xl:mx-24 2xl:mx-48">
         <section className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 lg:gap-4 md:gap-4 sm:gap-8 gap-y-4">
-            {shoppingInitialState.products.map((product) => (
+            {products.map((product) => (
               <Card
                 key={product.id}
-                quantity = {product.quantity}
-                image={product.image} 
-                country={product.country} 
-                plan={product.plan}
-                duration={product.duration}
-                reviews={product.reviews}
-                price={product.price}
-                textDeploy={product.textDeploy}
+                product={product}
+                addToCart={addToCart}
                 />
             ))}
         </section>
+        <button onClick={() => addToCart(2)}>Agregar</button>
       </div>
     </div>
   );
 };
 
-// addToCart={addToCart} 
+
 
 export default CardContainer;
