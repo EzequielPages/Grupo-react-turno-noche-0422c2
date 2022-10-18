@@ -17,11 +17,6 @@ const CardContainer = () => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
-  useEffect(() => {
-    console.log(cart)
-   
-  }, [cart])
-  
 
   return (
     <div className="Paquetes bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
