@@ -16,11 +16,6 @@ const CartItem = ({ data, deleteFromCart, addToCart }) => {
       <div className="btn-group btn-group-vertical gap-2">
         <button
           className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
-          onClick={() => deleteFromCart(id)}>
-          Eliminar Uno
-        </button>
-        <button
-          className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
           onClick={() => deleteFromCart(id, true)}>
           Eliminar Todos
         </button>
