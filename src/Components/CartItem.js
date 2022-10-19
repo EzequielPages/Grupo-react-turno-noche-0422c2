@@ -1,4 +1,4 @@
-const CartItem = ({ data, deleteFromCart }) => {
+const CartItem = ({ data, deleteFromCart, addToCart }) => {
   const { id, country, price, quantity, image } = data;
 
   let finalPrice = price * quantity
@@ -22,6 +22,16 @@ const CartItem = ({ data, deleteFromCart }) => {
           className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
           onClick={() => deleteFromCart(id, true)}>
           Eliminar Todos
+        </button>
+        <button
+          className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
+          onClick={() => addToCart(id)}>
+          +
+        </button>
+        <button
+          className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
+          onClick={() => deleteFromCart(id)}>
+          -
         </button>
       </div>
     </div>
