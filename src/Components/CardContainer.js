@@ -1,17 +1,15 @@
 import React, { useContext } from "react";
-import { useReducer , useEffect } from "react";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { shoppingInitialState, shoppingReducer } from "../reducer/shoppingReducer";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
 
 const CardContainer = () => {
  const [state, dispatch] = useContext(CartContext)
 
- const { products , cart } = state
+ const { products } = state
 
  const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });

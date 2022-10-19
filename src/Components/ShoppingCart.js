@@ -1,4 +1,4 @@
-import { useContext, useReducer } from "react";
+import { useContext } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
 import CartItem from "./CartItem";
@@ -8,9 +8,7 @@ const ShoppingCart = () => {
 
   const { cart } = state;
 
-  const addToCart = (id) => {
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
+ 
 
   const deleteFromCart = (id, all = false) => {
     if (all) {

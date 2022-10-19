@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer, useState } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import  {shoppingReducer, shoppingInitialState } from "./shoppingReducer";
 
 const CartContext = createContext();

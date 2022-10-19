@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane, faPhone, faGift, faLocationDot, faCircleChevronDown, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faPhone, faGift, faLocationDot, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import ToggleImg from './ToggleImg';
 
 
@@ -14,16 +14,16 @@ const FooterV2 = () => {
                        <ToggleImg />
                         <div className="flex items-center gap-x-4 mt-12">
                             <div className="w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center dark:text-seventh-night-color hover:text-fifth-color dark:hover:text-fifth-color">
-                                <a href='https://www.google.com.ar/maps/' target="_blank"> <FontAwesomeIcon icon={faLocationDot} /> </a>
+                                <a href='https://www.google.com.ar/maps/' target="_blank" rel='noreferrer'> <FontAwesomeIcon icon={faLocationDot} /> </a>
                             </div>
                             <div className="w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center dark:text-seventh-night-color hover:text-fifth-color dark:hover:text-fifth-color">
-                                <a href='https://mail.google.com/' target="_blank"> <FontAwesomeIcon icon={faPaperPlane} /> </a>
+                                <a href='https://mail.google.com/' target="_blank" rel='noreferrer'> <FontAwesomeIcon icon={faPaperPlane} /> </a>
                             </div>
                             <div className="w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center dark:text-seventh-night-color hover:text-fifth-color dark:hover:text-fifth-color">
-                                <a href='#' target="_blank"> <FontAwesomeIcon icon={faGift} /> </a>
+                                <a href='link' target="_blank" rel='noreferrer'> <FontAwesomeIcon icon={faGift} /> </a>
                             </div>
                             <div className="w-8 h-8 flex-shrink-0 rounded-full flex items-center justify-center dark:text-seventh-night-color hover:text-fifth-color dark:hover:text-fifth-color">
-                                <a href='#' target="_blank"> <FontAwesomeIcon icon={faPhone} /> </a>
+                                <a href='link' target="_blank" rel='noreferrer'> <FontAwesomeIcon icon={faPhone} /> </a>
                             </div>
                         </div>
                     </div>
