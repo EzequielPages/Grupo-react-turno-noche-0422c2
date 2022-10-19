@@ -9,7 +9,8 @@ const ProductsToCart = () => {
     const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
   
     const { products } = state;
-  
+
+      
     const addToCart = (id) => {
       dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     };

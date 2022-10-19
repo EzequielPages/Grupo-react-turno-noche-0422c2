@@ -1,5 +1,5 @@
 {
-    "items": [
+    "products": [
       {
         "id": 1,
         "image": "../asset/QatarCard.jpg",
@@ -40,5 +40,6 @@
         "price": 3900,
         "textDeploy": " SAG. FAMILIA"
       }
-    ]
+    ],
+    "cart": [ ]
 }
