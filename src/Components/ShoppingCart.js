@@ -1,8 +1,6 @@
 import { useContext, useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
-import { shoppingInitialState, shoppingReducer,
-} from "../reducer/shoppingReducer";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {

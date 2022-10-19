@@ -52,6 +52,9 @@ function ChildModal({ addToCart, id}) {
           <Button className="mb-2 italic" onClick={() => addToCart(id)}>
             Confirmar
           </Button>
+          <Button color="error" className="mb-2 italic" onClick={handleClose}>
+            cerrar
+          </Button>
         </Box>
       </Modal>
     </React.Fragment>
