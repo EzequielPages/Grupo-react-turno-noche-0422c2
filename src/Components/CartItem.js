@@ -1,3 +1,4 @@
+import "./CartItem.css"
 
 const CartItem = ({ data, deleteFromCart, addToCart }) => {
   const { id, country, price, quantity, image } = data;
@@ -6,9 +7,9 @@ const CartItem = ({ data, deleteFromCart, addToCart }) => {
 
   return (
     <div className="card-item flex p-2">
-      <img className="w-28 h-28 rounded" src={image} alt="img" />
-      <div className="flex flex-col justify-between ml-4">
-        <h4 className="font-bold">Tu viaje a: {country}</h4>
+      <img className="rounded w-14 h-24 object-cover" src={image} alt="img" />
+      <div className="flex flex-col justify-between ml-4 textSize">
+        <h4 className="font-bold ">Tu viaje a: {country}</h4>
         <h5 className="text-third-color">Valor del Tour: ${price} </h5>
         <h5 className="text-third-color">Precio Total:</h5>
         <h5 className="text-third-color">{quantity} x $ {finalPrice}</h5>

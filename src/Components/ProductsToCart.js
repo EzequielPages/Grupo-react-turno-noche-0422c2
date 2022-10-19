@@ -6,7 +6,7 @@ import Products from "./Products";
 
 
 const ProductsToCart = () => {
-    const [state, dispach] = useReducer(shoppingReducer, shoppingInitialState);
+    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
   
     const { products } = state;
   
