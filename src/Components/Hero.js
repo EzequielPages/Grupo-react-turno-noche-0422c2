@@ -25,7 +25,9 @@ const Hero = () => {
             confianza de nuestro personal en el cumplimiento de las políticas y
             objetivos.
           </p>
+          <div className="text-center">
           <button className="btn btn-primary font-medium">Más Info</button>
+          </div>
         </div>
       </div>
     </div>
