@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function CountdownTimer(){
-    const [expiryTime, setExpiryTime] = useState("20 oct 2022 00:00:00");
+    const [expiryTime, setExpiryTime] = useState("15 nov 2022 00:00:00");
     const [countdownTime, setCountdownTime]= useState(
         {
             countdownDays:'',
@@ -46,19 +46,19 @@ function CountdownTimer(){
         <div className="grid grid-flow-col gap-1 md:gap-4 text-center auto-cols-max pt-3 countdownStyle">
        {expiryTime!==false?
        <>
-        <div className="flex-col flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
+        <div className="flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
           <span className="countdown font-mono text-5x1 size-grid">{countdownTime.countdownDays}</span>
           Días
         </div> 
-        <div className="flex-col flex-col p-1 px-2 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
+        <div className="flex-col p-1 px-2 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
           <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownHours}</span>
           Hs.
         </div> 
-        <div className="flex-col flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
+        <div className="flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
           <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownMinutes}</span>
           Min.
         </div> 
-        <div className="flex-col flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
+        <div className="flex-col p-1 py-2 bg-second-color rounded-box text-sixth-color w-12 h-15">
           <span className="countdown font-mono text-5xl size-grid">{countdownTime.countdownSeconds}</span>
           Seg.
         </div>

@@ -50,7 +50,10 @@ function ChildModal({ addToCart, id}) {
             ¿Está seguro que desea agregar esto al carrito?
           </p>
           <Button className="mb-2 italic" onClick={() => addToCart(id)}>
-            Confirmar
+            AGREGAR
+          </Button>
+          <Button color="error" className="mb-2 italic" onClick={handleClose}>
+            CERRAR
           </Button>
         </Box>
       </Modal>

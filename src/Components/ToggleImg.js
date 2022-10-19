@@ -4,7 +4,7 @@ import Logo1 from "..//asset/logo1.png";
 import Logo2 from "..//asset/logo23.png";
 
 const ToggleImg = () => {
-    const { theme, setTheme } = React.useContext(ThemeContext)
+    const { theme } = React.useContext(ThemeContext)
 
     return (
         <div>

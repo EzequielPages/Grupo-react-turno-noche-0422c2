@@ -40,7 +40,7 @@ const Offers = () => {
           atracciones incluyendo un día increíble en el  desierto. Todo esto con guía en español. 
           ¡No te quedes por fuera y descúbrenos!
           </p>    
-          <div className="text-center element-style"> 
+          <div className="text-center"> 
           <button className="btn btn-primary font-medium">Mas Info</button>
           </div>   
         </div>

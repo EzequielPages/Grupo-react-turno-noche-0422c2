@@ -6,13 +6,12 @@ import Products from "./Products";
 
 
 const ProductsToCart = () => {
-    const [state, dispach] = useReducer(shoppingReducer, shoppingInitialState);
+    const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
   
     const { products } = state;
   
     const addToCart = (id) => {
-      console.log(id);
-      dispach({ type: TYPES.ADD_TO_CART, payload: id });
+      dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     };
   
   

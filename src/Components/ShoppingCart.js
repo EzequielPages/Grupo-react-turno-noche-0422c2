@@ -1,11 +1,10 @@
-import { useReducer } from "react";
+import { useContext } from "react";
 import { TYPES } from "../actions/shoppingActions";
-import { shoppingInitialState, shoppingReducer,
-} from "../reducer/shoppingReducer";
+import { CartContext } from "../reducer/cartContext";
 import CartItem from "./CartItem";
 
 const ShoppingCart = () => {
-  const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
+  const [state, dispatch] = useContext(CartContext)
 
   const { cart } = state;
 
@@ -29,7 +28,7 @@ const ShoppingCart = () => {
     <>
       <div className="box">
         {cart.map((item, index) => (
-          <CartItem key={index} data={item} deleteFromCart={deleteFromCart} />
+          <CartItem key={index} data={item} deleteFromCart={deleteFromCart} addToCart={addToCart} />
         ))}
       </div>
       <button
@@ -37,7 +36,6 @@ const ShoppingCart = () => {
         onClick={clearCart}>
         limpiar Carrito
       </button>
-      <button onClick={ () => addToCart(2) }>Agregar</button>
     </>
   );
 };

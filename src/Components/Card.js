@@ -11,7 +11,7 @@ const Card = ({addToCart, product}) => {
     <div className="border-2 border-first-color dark:border-first-night-color md:shadow-first-color md:shadow-md bg-seventh-color dark:bg-first-night-color flex flex-col card-size sm:rounded-3xl md:rounded-3xl zoomEfect">
       <div className="containerAnimated">
         <img
-          className="overflow-hidden size-image imageAnimated md:rounded-tl-3xl sm:rounded-3xl md:rounded-tr-3xl imgCardRadius"
+          className="overflow-hidden size-image imageAnimated md:rounded-tl-3xl sm:rounded-3xl md:rounded-tr-3xl object-cover imgCardRadius"
           src={image}
           alt="ciudad"
         />

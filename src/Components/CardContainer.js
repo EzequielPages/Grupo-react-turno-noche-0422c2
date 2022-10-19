@@ -1,26 +1,20 @@
-import React from "react";
-import { useReducer , useEffect } from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { shoppingInitialState, shoppingReducer } from "../reducer/shoppingReducer";
 import { TYPES } from "../actions/shoppingActions";
+import { CartContext } from "../reducer/cartContext";
 
 const CardContainer = () => {
- const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState)
+ const [state, dispatch] = useContext(CartContext)
 
- const { products , cart } = state
+ const { products } = state
 
  const addToCart = (id) => {
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
-  useEffect(() => {
-    console.log(cart)
-   
-  }, [cart])
-  
 
   return (
     <div className="Paquetes bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
@@ -40,7 +34,6 @@ const CardContainer = () => {
                 />
             ))}
         </section>
-        <button onClick={() => addToCart(2)}>Agregar</button>
       </div>
     </div>
   );
