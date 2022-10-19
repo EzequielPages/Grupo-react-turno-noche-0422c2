@@ -8,7 +8,9 @@ const ShoppingCart = () => {
 
   const { cart } = state;
 
- 
+  const addToCart = (id) => {
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+  };
 
   const deleteFromCart = (id, all = false) => {
     if (all) {
@@ -26,7 +28,7 @@ const ShoppingCart = () => {
     <>
       <div className="box">
         {cart.map((item, index) => (
-          <CartItem key={index} data={item} deleteFromCart={deleteFromCart} />
+          <CartItem key={index} data={item} deleteFromCart={deleteFromCart} addToCart={addToCart} />
         ))}
       </div>
       <button

@@ -11,7 +11,7 @@ const ProductsToCart = () => {
     const { products } = state;
   
     const addToCart = (id) => {
-      dispach({ type: TYPES.ADD_TO_CART, payload: id });
+      dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     };
   
   

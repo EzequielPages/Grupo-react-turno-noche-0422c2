@@ -1,3 +1,4 @@
+
 const CartItem = ({ data, deleteFromCart, addToCart }) => {
   const { id, country, price, quantity, image } = data;
 
