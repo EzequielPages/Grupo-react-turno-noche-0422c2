@@ -1,46 +1,47 @@
-
 {
-    "products": [
-      {
-        "id": 1,
-        "image": "https://www.cronista.com/files/image/472/472341/62ebe04bccbbe.jpg",
-        "country": "QATAR",
-        "plan": "FIFA WORLD CUP 2022",
-        "duration": "21 DÍAS",
-        "reviews": "31",
-        "price": 5500,
-        "textDeploy": "DOHA"
-      },
-      {
-        "id": 2,
-        "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
-        "country": "SUDÁFRICA",
-        "plan": "CONOCÉ LA SABANA",
-        "duration": "9 DÍAS",
-        "reviews": "92",
-        "price": 1900,
-        "textDeploy": "SABI SABI"
-      },
-      {
-        "id": 3,
-        "image": "https://i.pinimg.com/originals/4f/ef/84/4fef841b9affd12b2f2dc5f088b4910d.jpg",
-        "country": "ARGENTINA",
-        "plan": "VISITÁ LAS CATARATAS",
-        "duration": "7 DÍAS",
-        "reviews": "129",
-        "price": 790,
-        "textDeploy": "MISIONES"
-      },
-      {
-        "id": 4,
-        "image": "https://blog.centraldereservas.com/wp-content/uploads/2017/02/Sagrada-familia.-Barcelona-Fotolia_102733741_Subscription_Monthly_M.jpg",
-        "country": "ESPAÑA",
-        "plan": "TOUR POR BARCELONA",
-        "duration": "10 DÍAS",
-        "reviews": "101",
-        "price": 3900,
-        "textDeploy": " SAG. FAMILIA"
-      }
-    ],
-    "cart": [ ]
+  "products": [
+    {
+      "id": 1,
+      "image": "https://www.cronista.com/files/image/472/472341/62ebe04bccbbe.jpg",
+      "country": "QATAR",
+      "plan": "FIFA WORLD CUP 2022",
+      "duration": "21 DÍAS",
+      "reviews": "31",
+      "price": 5500,
+      "textDeploy": "DOHA"
+    },
+    {
+      "id": 2,
+      "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
+      "country": "SUDÁFRICA",
+      "plan": "CONOCÉ LA SABANA",
+      "duration": "9 DÍAS",
+      "reviews": "92",
+      "price": 1900,
+      "textDeploy": "SABI SABI"
+    },
+    {
+      "id": 3,
+      "image": "https://i.pinimg.com/originals/4f/ef/84/4fef841b9affd12b2f2dc5f088b4910d.jpg",
+      "country": "ARGENTINA",
+      "plan": "VISITÁ LAS CATARATAS",
+      "duration": "7 DÍAS",
+      "reviews": "129",
+      "price": 790,
+      "textDeploy": "MISIONES"
+    },
+    {
+      "id": 4,
+      "image": "https://blog.centraldereservas.com/wp-content/uploads/2017/02/Sagrada-familia.-Barcelona-Fotolia_102733741_Subscription_Monthly_M.jpg",
+      "country": "ESPAÑA",
+      "plan": "TOUR POR BARCELONA",
+      "duration": "10 DÍAS",
+      "reviews": "101",
+      "price": 3900,
+      "textDeploy": " SAG. FAMILIA"
+    }
+  ],
+  "cart": [
+   
+  ]
 }

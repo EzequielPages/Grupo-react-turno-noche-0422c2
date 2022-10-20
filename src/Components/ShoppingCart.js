@@ -1,4 +1,3 @@
-import axios from "axios";
 import { useContext, useEffect } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
@@ -13,21 +12,22 @@ const ShoppingCart = () => {
     const PRODUCTS_URL = "http://localhost:5000/products",
       CART_URL= "http://localhost:5000/cart";
 
-    const resProducts = await axios.get(PRODUCTS_URL),
-      resCart = await axios.get(CART_URL);
+    const resProducts = await fetch(PRODUCTS_URL),
+      resCart = await fetch(CART_URL);
 
-    const productsList = await resProducts.data,
-      cartItems = await resCart.data;
+    const productsList = await resProducts.json(),
+      cartItems = await resCart.json();
 
     dispatch({type: TYPES.READ_STATE, payload: [productsList, cartItems] })
   }
 
   useEffect(() => {
-    updateState()
-  }, [])
+     updateState()
+  },[])
   
 
-  const addToCart = (id) => {
+  const addToCart = async (id) => {
+  
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 
