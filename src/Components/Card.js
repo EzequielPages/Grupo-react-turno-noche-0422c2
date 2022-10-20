@@ -15,8 +15,8 @@ const Card = ({addToCart, product}) => {
           src={image}
           alt="ciudad"
         />
-        <div class="overlayAnimated">
-          <div class="textAnimated italic text-sm">
+        <div className="overlayAnimated">
+          <div className="textAnimated italic text-sm">
             <FontAwesomeIcon icon={faLocationDot} /> {textDeploy}
           </div>
         </div>

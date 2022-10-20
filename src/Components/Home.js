@@ -27,7 +27,7 @@ const Home = () => {
             },
         }} disablePast label="." autoOk className=' bg-seventh-color rounded-md' value={selectedSecondDate2} onChange={setSelectedSecondDate2} />
             <select className="select select-bordered text-center select-accent w-full ">
-              <option disabled selected>ELEGIR DESTINO</option>
+              <option defaultValue>ELEGIR DESTINO</option>
               <option>MADRID</option>
               <option>LONDRES</option>
               <option>QATAR</option>

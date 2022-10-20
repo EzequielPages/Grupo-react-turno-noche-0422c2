@@ -8,7 +8,7 @@ const CartProvider = ({ children }) => {
   const { cart, products } = state;
   
   useEffect(() => {
-    console.log(cart)
+    
   }, [cart, products]);
 
 

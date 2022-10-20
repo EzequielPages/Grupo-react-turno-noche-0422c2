@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { shoppingInitialState, shoppingReducer,} from "../reducer/shoppingReducer";
 import Products from "./Products";
+import axios from "axios";
 
 
 
@@ -9,7 +10,7 @@ const ProductsToCart = () => {
     const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
   
     const { products } = state;
-  
+      
     const addToCart = (id) => {
       dispatch({ type: TYPES.ADD_TO_CART, payload: id });
     };

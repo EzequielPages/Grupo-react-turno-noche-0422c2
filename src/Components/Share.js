@@ -23,10 +23,10 @@ const Share = () => {
     return (
         <>
             <div style={{
-                backgroundImage: `url("https://source.unsplash.com/1920x200/?'travel'")`
+                backgroundImage: `url("https://i.imgur.com/h9KiCHb.png")`
             }}>
-                <div class='text-center'><p class='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-color dark:text-fifth-night-color'>COMPARTIR</p></div>
-                <div class='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
+                <div className='text-center'><p className='[text-shadow:_0_3px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-night-color'>COMPARTIR</p></div>
+                <div className='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
                     <FacebookShareButton url={shareUrl}>
                         <FacebookIcon size={40} round={true} />
                     </FacebookShareButton>

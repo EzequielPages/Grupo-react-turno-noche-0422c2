@@ -1,61 +1,19 @@
 import { TYPES } from "../actions/shoppingActions";
-import QatarCard from "../asset/QatarCard.jpg";
-import Cataratas from "../asset/Cataratas.jpg";
-import España from "../asset/España.jpg";
-import Sudafrica from "../asset/Sudafrica.jpg";
 
 export const shoppingInitialState = {
-  products: [
-    {
-      id: 1,
-      image: QatarCard,
-      country: "QATAR",
-      plan: "FIFA WORLD CUP 2022",
-      duration: "21 DÍAS",
-      reviews: "31",
-      quantity: 1,
-      price: 5500,
-      textDeploy: "DOHA",
-    },
-    {
-      id: 2,
-      image: Sudafrica,
-      country: "SUDÁFRICA",
-      plan: "CONOCÉ LA SABANA",
-      duration: "9 DÍAS",
-      reviews: "92",
-      quantity: 1,
-      price: 1900,
-      textDeploy: "SABI SABI",
-    },
-    {
-      id: 3,
-      image: Cataratas,
-      country: "ARGENTINA",
-      plan: "VISITÁ LAS CATARATAS",
-      duration: "7 DÍAS",
-      reviews: "129",
-      quantity: 1,
-      price: 790,
-      textDeploy: "MISIONES",
-    },
-    {
-      id: 4,
-      image: España,
-      country: "ESPAÑA",
-      plan: "TOUR POR BARCELONA",
-      duration: "10 DÍAS",
-      reviews: "101",
-      price: 3900,
-      quantity: 1,
-      textDeploy: " SAG. FAMILIA",
-    },
-  ],
-  cart: [ ],
+  products: [ ],
+  cart: [ ]
 };
 
 export function shoppingReducer(state, action) {
   switch (action.type) {
+    case TYPES.READ_STATE: {
+      return {
+        ...state,
+        products: action.payload[0],
+        cart: action.payload[1]
+      }
+    }
     case TYPES.ADD_TO_CART: {
       const newItem = state.products.find(
         (product) => product.id === action.payload

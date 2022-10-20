@@ -17,7 +17,7 @@ const CardContainer = () => {
 
 
   return (
-    <div className="Paquetes bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
+    <div className="bg-base-200 dark:bg-fourth-color px-4 pt-4 pb-20">
       <h5 className="text-center text-4xl font-bold text-first-color dark:text-seventh-color pb-2">
         Recorré el mundo <FontAwesomeIcon icon={faPlaneDeparture} />
       </h5>
