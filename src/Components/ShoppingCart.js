@@ -25,7 +25,7 @@ const ShoppingCart = () => {
   useEffect(() => {
     updateState()
     console.log(updateState)
-  }, [])
+  },[])
   
 
   const addToCart = (id) => {
