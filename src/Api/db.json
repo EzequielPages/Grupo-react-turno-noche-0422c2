@@ -3,7 +3,7 @@
     "products": [
       {
         "id": 1,
-        "image": "../asset/QatarCard.jpg",
+        "image": "https://www.cronista.com/files/image/472/472341/62ebe04bccbbe.jpg",
         "country": "QATAR",
         "plan": "FIFA WORLD CUP 2022",
         "duration": "21 DÍAS",
@@ -13,7 +13,7 @@
       },
       {
         "id": 2,
-        "image": "../asset/Sudafrica.jpg",
+        "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
         "country": "SUDÁFRICA",
         "plan": "CONOCÉ LA SABANA",
         "duration": "9 DÍAS",
@@ -23,7 +23,7 @@
       },
       {
         "id": 3,
-        "image": "../asset/Cataratas.jpg",
+        "image": "https://i.pinimg.com/originals/4f/ef/84/4fef841b9affd12b2f2dc5f088b4910d.jpg",
         "country": "ARGENTINA",
         "plan": "VISITÁ LAS CATARATAS",
         "duration": "7 DÍAS",
@@ -33,7 +33,7 @@
       },
       {
         "id": 4,
-        "image": "../asset/España.jpg",
+        "image": "https://blog.centraldereservas.com/wp-content/uploads/2017/02/Sagrada-familia.-Barcelona-Fotolia_102733741_Subscription_Monthly_M.jpg",
         "country": "ESPAÑA",
         "plan": "TOUR POR BARCELONA",
         "duration": "10 DÍAS",

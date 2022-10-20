@@ -1,8 +1,8 @@
 import { useReducer } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { shoppingInitialState, shoppingReducer,} from "../reducer/shoppingReducer";
-import Products from "./Products";
-import axios from "axios";
+import Products from "..//Api/db.json";
+
 
 
 
