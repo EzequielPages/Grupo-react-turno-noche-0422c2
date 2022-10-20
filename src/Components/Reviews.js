@@ -28,7 +28,8 @@ const Reviews = () => {
       <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
         <div className="h-full text-center">
           <img alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 shadow-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"></img>
-          <p className="leading-relaxed">Fácil comprar, fácil cancelar, políticas claras y una experiencia de usuario bastante relevante. Lo hacen fácil y simple
+          <p className="leading-relaxed">Fácil comprar, fácil cancelar, políticas claras y una experiencia de usuario bastante relevante. Lo hacen fácil y simple.
+          
 Gracias!</p>
           <ul className="flex justify-center pt-10">
                 <FontAwesomeIcon icon={faStar} className="text-second-color"/>
