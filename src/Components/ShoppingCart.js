@@ -24,6 +24,7 @@ const ShoppingCart = () => {
 
   useEffect(() => {
     updateState()
+    console.log(updateState)
   }, [])
   
 

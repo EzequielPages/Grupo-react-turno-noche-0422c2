@@ -1,9 +1,8 @@
 import { TYPES } from "../actions/shoppingActions";
 
-
 export const shoppingInitialState = {
   products: [ ],
-  cart: [ ],
+  cart: [ ]
 };
 
 export function shoppingReducer(state, action) {
