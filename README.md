@@ -23,7 +23,7 @@ Una vez descargado el proyecto, instalar dependencias mediante:
 
 Ahora correr la base de datos mediante el siguiente comando:
 
-### `json-server --watch --port 5000 src/Api/db.json`
+### `npm run server`
 
 Ya podemos abrir la DB, debemos abrir en una pestaña del navegador:
 
