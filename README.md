@@ -11,7 +11,7 @@ Al clickear sobre el botón "Seleccionar fecha", pide llenar un formulario con d
 
 - React Js (Para la realización general del proyecto)
 - Material UI, Tailwind CSS y Daysiui (Para estilos, etiquetas y componentes predefinidos) 
-- Json-server (Para conectar el proyecto con una base de datos y poder darle persistencia a los productos en el carro)
+- Json-server (Para conectar el proyecto con una base de datos y poder darle persistencia a los productos en el carro mediante localStorage)
 - Font-Awesome, react-slick, entre otras pequeñas dependencias (Se utilizaron para Iconos, carrouseles, y pequeños componentes)
 
 
