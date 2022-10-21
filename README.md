@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# TravelN
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+TravelN es un proyecto realizado en la comisión 0422c2 de la Academia Numen. Es una agencia de viajes, que ofrece paquetes para recorrer el mundo.
+La aplicación permite conectarse con una base de datos realizada con `Json-server`.
+Permite seleccionar ciertos paquetes, conocer la oferta del momento, agregar tours al carro, poder acceder a él, agregando o eliminando productos desde el mismo, asi como tambien ver una simulación del precio total de tus vacaciones :)
+Al clickear sobre el botón "Seleccionar fecha", pide llenar un formulario con datos sobre el viaje del usuario, luego de eso se genera un modal de confirmación, que al clickear "Agregar" se envía la petición al carro, aumentando su cantidad de 1 en 1 en cantidad de tours.
 
-In the project directory, you can run:
+## Las dependencias utilizadas fueron:
+
+- React Js (Para la realización general del proyecto)
+- Material UI, Tailwind CSS y Daysiui (Para estilos, etiquetas y componentes predefinidos) 
+- Json-server (Para conectar el proyecto con una base de datos y poder darle persistencia a los productos en el carro)
+- Font-Awesome, react-slick, entre otras pequeñas dependencias (Se utilizaron para Iconos, carrouseles, y pequeños componentes)
+
+
+## Descargar y correr el proyecto
+
+Una vez descargado el proyecto, instalar dependencias mediante:
+
+### `npm install`
+
+Ahora correr la base de datos mediante el siguiente comando:
+
+### `json-server --watch --port 5000 src/Api/db.json`
+
+Ya podemos abrir la DB, debemos abrir en una pestaña del navegador:
+
+### `http://localhost:5000/products`
+### `http://localhost:5000/cart`
+
+Luego correr el proyecto mediante:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+con este último comando, se abre una pestaña con el proyecto en el puerto 3000 de su navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Gif Funcionalidad
+![image](https://github.com/RodriPal/Grupo-react-turno-noche-0422c2/tree/main/public/TravelNGif.gif)
 
-### `npm test`
+### Realizado por:
+- Nicolas Valiconto
+- Ezequiel Pagés
+- Ignacio Morales
+- Rodrigo Paliza
+- Ayrton García
+- Nicolas Iozzi
+- Gabriela Tejerina
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
