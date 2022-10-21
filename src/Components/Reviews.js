@@ -11,6 +11,7 @@ const Reviews = () => {
     <div className="flex flex-wrap -m-4">
       <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
         <div className="h-full text-center">
+                                      {/************ PERFIL IMAGE *************/}
           <img alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 shadow-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"></img>
           <p className="leading-relaxed">Excelente servicio. El traslado muy seguro, además te pueden orientar en todo momento ante cualquier consulta.</p>
           <ul className="flex justify-center pt-10">
@@ -27,6 +28,7 @@ const Reviews = () => {
       </div>
       <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
         <div className="h-full text-center">
+                                      {/************ PERFIL IMAGE *************/}
           <img alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 shadow-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"></img>
           <p className="leading-relaxed">Fácil comprar, fácil cancelar, políticas claras y una experiencia de usuario bastante relevante. Lo hacen fácil y simple. Gracias!</p>
           <ul className="flex justify-center pt-10">
@@ -43,6 +45,7 @@ const Reviews = () => {
       </div>
       <div className="lg:w-1/3 lg:mb-0 p-4">
         <div className="h-full text-center">
+                                      {/************ PERFIL IMAGE *************/}
           <img alt="testimonial" className="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100 shadow-lg" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"></img>
           <p className="leading-relaxed">La mejor agencia de viajes, confiable y segura, en todas mis reservas no he tenido problema alguno.
           Siempre elijo viajar con TravelN</p>
