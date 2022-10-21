@@ -2,7 +2,7 @@ import { TYPES } from "../actions/shoppingActions";
 
 export const shoppingInitialState = {
   products: [ ],
-  cart: [ ]
+  cart: JSON.parse(localStorage.getItem("cart")) || [ ],
 };
 
 export function shoppingReducer(state, action) {
@@ -11,7 +11,7 @@ export function shoppingReducer(state, action) {
       return {
         ...state,
         products: action.payload[0],
-        cart: action.payload[1]
+        // cart: action.payload[1]
       }
     }
     case TYPES.ADD_TO_CART: {

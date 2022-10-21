@@ -8,7 +8,8 @@ const CartProvider = ({ children }) => {
   const { cart, products } = state;
   
   useEffect(() => {
-    
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("products", JSON.stringify(products))
   }, [cart, products]);
 
 
