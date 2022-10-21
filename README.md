@@ -37,7 +37,7 @@ Luego correr el proyecto mediante:
 con este último comando, se abre una pestaña con el proyecto en el puerto 3000 de su navegador.
 
 ## Gif Funcionalidad
-![image](https://github.com/RodriPal/Grupo-react-turno-noche-0422c2/tree/main/public/TravelNGif.gif)
+![image](https://github.com/RodriPal/Grupo-react-turno-noche-0422c2/blob/main/public/TravelNGif.gif)
 
 ### Realizado por:
 - Nicolas Valiconto
