@@ -60,7 +60,10 @@ export function shoppingReducer(state, action) {
       };
     }
     case TYPES.CLEAR_CART: {
-      return shoppingInitialState;
+      return {
+        ...state,
+        cart: state.cart = [],
+      };
     }
 
     default:
