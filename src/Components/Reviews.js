@@ -31,7 +31,13 @@ const Reviews = () => {
           <p className="leading-relaxed">Fácil comprar, fácil cancelar, políticas claras y una experiencia de usuario bastante relevante. Lo hacen fácil y simple.
           
 Gracias!</p>
-          
+          <ul className="flex justify-center pt-10">
+                <FontAwesomeIcon icon={faStar} className="text-second-color"/>
+                <FontAwesomeIcon icon={faStar} className="text-second-color"/>
+                <FontAwesomeIcon icon={faStar} className="text-second-color"/>
+                <FontAwesomeIcon icon={faStar} className="text-second-color"/>
+                <FontAwesomeIcon icon={faStar} className="text-second-color"/>
+            </ul>
           <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
           <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">ROCIO GOMEZ</h2>
           <p className="text-gray-500">Pasajera del vuelo PDM-50 hacia Bora Bora.</p>
