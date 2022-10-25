@@ -4,7 +4,7 @@ import { faStar, faLocationDot, faStarHalf,} from "@fortawesome/free-solid-svg-i
 import "./Card.css";
 import NestedModal from "./CardModal";
 
-const Card = ({addToCart, product}) => {
+const Card = ({product}) => {
   const {country , image , plan , duration , reviews , price , textDeploy , id}  = product
  
   return (
@@ -47,7 +47,7 @@ const Card = ({addToCart, product}) => {
           <span className="text-success">USD ${price}</span>
         </div>
       </div>
-      <NestedModal addToCart={addToCart} destino={country} id={id}></NestedModal>      
+      <NestedModal destino={country} product={product}></NestedModal>      
     </div>
   );
 };

@@ -6,6 +6,10 @@ import "./Card.css";
 import MaterialUIPickers from "./CardDatePicker";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {CartContext} from "../reducer/cartContext"
+import { useContext } from "react";
+import {TYPES} from "../actions/shoppingActions"
+
 
 const style = {
   position: "absolute",
@@ -21,7 +25,45 @@ const style = {
   pb: 3,
 };
 
-function ChildModal({ addToCart, id}) {
+function ChildModal(product) {
+  const [ dispatch] = useContext(CartContext);
+  
+  const updateState = async () => {
+    const PRODUCTS_URL = "http://localhost:5000/products",
+      CART_URL= "http://localhost:5000/cart";
+
+    const resProducts = await fetch(PRODUCTS_URL),
+      resCart = await fetch(CART_URL);
+
+    const productsList = await resProducts.json(),
+      cartItems = await resCart.json();
+
+    dispatch({type: TYPES.READ_STATE, payload: [productsList, cartItems] })
+  }
+  
+
+  const addToCart = async (product) => {
+
+    const PRODUCT = product.product
+
+    PRODUCT.id = Date.now()
+
+    PRODUCT["quantity"] = 1
+
+    console.log(PRODUCT)
+
+    const options = {
+      method: "POST",
+      headers: {"content-type": "application/json"},
+      body: JSON.stringify(PRODUCT)  
+    }
+  
+
+    await fetch("http://localhost:5000/cart", options)
+
+    updateState()
+
+  };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
@@ -29,6 +71,7 @@ function ChildModal({ addToCart, id}) {
   const handleClose = () => {
     setOpen(false);
   };
+  
 
   return (
     <React.Fragment>
@@ -49,7 +92,7 @@ function ChildModal({ addToCart, id}) {
           <p className="mb-2 text-center italic">
             ¿Está seguro que desea agregar esto al carrito?
           </p>
-          <Button className="mb-2 italic" onClick={() => addToCart(id)}>
+          <Button className="mb-2 italic" onClick={() => addToCart(product)}>
             AGREGAR
           </Button>
           <Button color="error" className="mb-2 italic" onClick={handleClose}>
@@ -61,7 +104,7 @@ function ChildModal({ addToCart, id}) {
   );
 }
 
-export default function NestedModal({ destino, id , addToCart}) {
+export default function NestedModal({ destino, product}) {
   
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
@@ -100,7 +143,7 @@ export default function NestedModal({ destino, id , addToCart}) {
           </p>
           <MaterialUIPickers></MaterialUIPickers>
           <div className="text-center mt-12">
-            <ChildModal addToCart={addToCart} id={id} />
+            <ChildModal product={product} />
           </div>
         </Box>
       </Modal>

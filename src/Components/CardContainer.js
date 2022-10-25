@@ -41,7 +41,6 @@ const CardContainer = () => {
               <Card
                 key={product.id}
                 product={product}
-                addToCart={addToCart}
                 />
             ))}
         </section>

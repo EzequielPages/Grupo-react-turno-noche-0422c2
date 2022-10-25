@@ -42,5 +42,27 @@
     }
   ],
   "cart": [
+    {
+      "id": 1666724624086,
+      "image": "https://i.pinimg.com/originals/4f/ef/84/4fef841b9affd12b2f2dc5f088b4910d.jpg",
+      "country": "ARGENTINA",
+      "plan": "VISITÁ LAS CATARATAS",
+      "duration": "7 DÍAS",
+      "reviews": "129",
+      "price": 790,
+      "textDeploy": "MISIONES",
+      "quantity": 1
+    },
+    {
+      "id": 1666725340988,
+      "image": "https://blog.centraldereservas.com/wp-content/uploads/2017/02/Sagrada-familia.-Barcelona-Fotolia_102733741_Subscription_Monthly_M.jpg",
+      "country": "ESPAÑA",
+      "plan": "TOUR POR BARCELONA",
+      "duration": "10 DÍAS",
+      "reviews": "101",
+      "price": 3900,
+      "textDeploy": " SAG. FAMILIA",
+      "quantity": 1
+    }
   ]
 }

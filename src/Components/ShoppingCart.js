@@ -13,58 +13,47 @@ const ShoppingCart = () => {
     const PRODUCTS_URL = "http://localhost:5000/products",
       CART_URL= "http://localhost:5000/cart";
 
-    const resProducts = await fetch(PRODUCTS_URL),
-      resCart = await fetch(CART_URL);
+    const resProducts = await axios(PRODUCTS_URL),
+      resCart = await axios(CART_URL);
 
-    const productsList = await resProducts.json(),
-      cartItems = await resCart.json();
+    const productsList = await resProducts.data,
+      cartItems = await resCart.data;
 
     dispatch({type: TYPES.READ_STATE, payload: [productsList, cartItems] })
   }
 
   useEffect(() => {
      updateState()
-  },[])
+  },[cart])
   
 
-  const addToCart = async (id) => {
+  const addToCart = async (product) => {
+
+    product.id = Date.now()
+
+    console.log(product)
 
     const sendPost = {
       method: "POST",
       headers: {"content-type": "application/json"},
-      data: JSON.stringify()  
+      data: JSON.stringify(product)  
     }
-
-    const res = await axios("http://localhost:5000/cart", sendPost),
-      cartItems = await res.data;
   
-    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
-  };
 
-  const deleteFromCart = (id, all = false) => {
-    if (all) {
-      dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
-    } else {
-      dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
-    }
-  };
+    await axios("http://localhost:5000/cart", sendPost)
 
-  const clearCart = () => {
-    dispatch({ type: TYPES.CLEAR_CART });
+    updateState()
+
   };
 
   return (
     <>
       <div className="box">
         {cart.map((item, index) => (
-          <CartItem key={index} data={item} deleteFromCart={deleteFromCart} addToCart={addToCart} />
+          <CartItem key={index} data={item}/>
         ))}
       </div>
-      <button
-        className="btn btn-sm dark:bg-third-night-color dark:text-seventh-night-color"
-        onClick={clearCart}>
-        limpiar Carrito
-      </button>
+
     </>
   );
 };
