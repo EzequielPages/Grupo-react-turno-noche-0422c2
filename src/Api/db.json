@@ -42,49 +42,6 @@
     }
   ],
   "cart": [
-    {
-      "id": 1666732240922,
-      "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
-      "country": "SUDÁFRICA",
-      "plan": "CONOCÉ LA SABANA",
-      "duration": "9 DÍAS",
-      "reviews": "92",
-      "price": 1900,
-      "textDeploy": "SABI SABI",
-      "quantity": 1
-    },
-    {
-      "id": 1666732241403,
-      "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
-      "country": "SUDÁFRICA",
-      "plan": "CONOCÉ LA SABANA",
-      "duration": "9 DÍAS",
-      "reviews": "92",
-      "price": 1900,
-      "textDeploy": "SABI SABI",
-      "quantity": 1
-    },
-    {
-      "id": 1666732275013,
-      "image": "https://www.cronista.com/files/image/472/472341/62ebe04bccbbe.jpg",
-      "country": "QATAR",
-      "plan": "FIFA WORLD CUP 2022",
-      "duration": "21 DÍAS",
-      "reviews": "31",
-      "price": 5500,
-      "textDeploy": "DOHA",
-      "quantity": 1
-    },
-    {
-      "id": 1666732279371,
-      "image": "https://i.pinimg.com/originals/4f/ef/84/4fef841b9affd12b2f2dc5f088b4910d.jpg",
-      "country": "ARGENTINA",
-      "plan": "VISITÁ LAS CATARATAS",
-      "duration": "7 DÍAS",
-      "reviews": "129",
-      "price": 790,
-      "textDeploy": "MISIONES",
-      "quantity": 1
-    }
+  
   ]
 }
