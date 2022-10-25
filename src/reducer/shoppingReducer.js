@@ -11,6 +11,7 @@ export function shoppingReducer(state, action) {
       return {
         ...state,
         products: action.payload[0],
+        cart: action.payload[1]
       }
     }
     case TYPES.ADD_TO_CART: {

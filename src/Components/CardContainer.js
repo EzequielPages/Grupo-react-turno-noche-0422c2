@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import axios from "axios";
 import Card from "./Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlaneDeparture } from "@fortawesome/free-solid-svg-icons";
@@ -6,12 +7,22 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
 
+
 const CardContainer = () => {
  const [state, dispatch] = useContext(CartContext)
 
  const { products } = state
 
- const addToCart = (id) => {
+ const addToCart = async (id) => {
+  const sendPost = {
+    method: "POST",
+    headers: {"content-type": "application/json"},
+    data: JSON.stringify()  
+  }
+
+  const res = await axios("http://localhost:5000/cart", sendPost),
+    cartItems = await res.data;
+
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
 

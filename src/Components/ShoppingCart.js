@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useContext, useEffect } from "react";
 import { TYPES } from "../actions/shoppingActions";
 import { CartContext } from "../reducer/cartContext";
@@ -27,6 +28,15 @@ const ShoppingCart = () => {
   
 
   const addToCart = async (id) => {
+
+    const sendPost = {
+      method: "POST",
+      headers: {"content-type": "application/json"},
+      data: JSON.stringify()  
+    }
+
+    const res = await axios("http://localhost:5000/cart", sendPost),
+      cartItems = await res.data;
   
     dispatch({ type: TYPES.ADD_TO_CART, payload: id });
   };
