@@ -25,7 +25,7 @@ const Share = () => {
             <div style={{
                 backgroundImage: `url("https://i.imgur.com/h9KiCHb.png")`
             }}>
-                <div className='text-center'><p className='[text-shadow:_0_3px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-night-color'>COMPARTIR</p></div>
+                <div className='text-center'><p className='[text-shadow:_0_3px_0_rgb(0_0_0_/_100%)] text-2xl tracking-widest font-bold text-seventh-night-color pt-7'>COMPARTIR</p></div>
                 <div className='flex justify-evenly lg:justify-center lg:space-x-10 h-32'>
                     <FacebookShareButton url={shareUrl}>
                         <FacebookIcon size={40} round={true} />
