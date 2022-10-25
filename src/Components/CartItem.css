@@ -1,5 +1,12 @@
+.cartItemSize{
+    min-width: 180px;
+}
+
 @media only screen and (max-width: 425px){
     .textSize {
         font-size: 11px !important; 
+    }
+    .cartItemSize {
+        min-width: 100px
     }
     }

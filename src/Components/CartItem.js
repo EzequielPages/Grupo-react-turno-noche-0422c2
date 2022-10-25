@@ -79,7 +79,7 @@ const CartItem = ({ data }) => {
     <div className="card-item flex p-2">
       <img className="rounded w-14 h-24 object-cover" src={image} alt="img" />
       <div className="flex flex-col justify-between ml-4 textSize">
-        <h4 className="font-bold ">Tu viaje a: {country}</h4>
+        <h4 className="font-bold cartItemSize">Tu viaje a: {country}</h4>
         <h5 className="text-third-color">Valor del Tour: ${price} </h5>
         <h5 className="text-third-color">Precio Total:</h5>
         <h5 className="text-third-color">
