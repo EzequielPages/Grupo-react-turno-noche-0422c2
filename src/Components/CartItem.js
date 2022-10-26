@@ -83,7 +83,7 @@ const CartItem = ({ data }) => {
         <h5 className="text-third-color">Valor del Tour: ${price} </h5>
         <h5 className="text-third-color">Precio Total:</h5>
         <h5 className="text-third-color">
-          {quantity} x $ {finalPrice}
+          {quantity} x $ {price} = $ {finalPrice}
         </h5>
       </div>
       <div className="btn-group btn-group-vertical gap-2">
