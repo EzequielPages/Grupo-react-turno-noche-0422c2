@@ -1,6 +1,6 @@
 import "./CartItem.css";
 import { CartContext } from "../reducer/cartContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { TYPES } from "../actions/shoppingActions";
 
 const CartItem = ({ data }) => {
@@ -19,8 +19,9 @@ const CartItem = ({ data }) => {
     dispatch({ type: TYPES.READ_STATE, payload: [productsList, cartItems] });
   };
 
+ 
+
   const increaseCounter = async (product) => {
-    console.log(product);
 
     const { id } = product;
 
@@ -38,7 +39,6 @@ const CartItem = ({ data }) => {
   };
 
   const decreaseCounter = async (product) => {
-    console.log(product);
 
     const { id, quantity } = product;
 

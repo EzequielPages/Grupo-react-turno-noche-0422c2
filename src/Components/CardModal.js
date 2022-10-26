@@ -38,8 +38,9 @@ function ChildModal(product) {
     const productsList = await resProducts.json(),
       cartItems = await resCart.json();
 
-    dispatch({type: TYPES.READ_STATE, payload: [productsList, cartItems] })
+    dispatch({type: TYPES.READ_STATE, payload: [productsList, cartItems] });
   }
+  
   
 
   const addToCart = async (product) => {
@@ -49,8 +50,6 @@ function ChildModal(product) {
     PRODUCT.id = Date.now()
 
     PRODUCT["quantity"] = 1
-
-    console.log(PRODUCT)
 
     const options = {
       method: "POST",

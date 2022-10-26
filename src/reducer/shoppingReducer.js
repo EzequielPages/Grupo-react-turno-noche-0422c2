@@ -13,8 +13,7 @@ export function shoppingReducer(state, action) {
         products: action.payload[0],
         cart: action.payload[1]
       }
-    }
-  
+    }  
 
     default:
       return state;

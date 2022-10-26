@@ -42,7 +42,7 @@ const ShoppingCart = () => {
 
     await axios("http://localhost:5000/cart", sendPost)
 
-    updateState()
+    
 
   };
 
