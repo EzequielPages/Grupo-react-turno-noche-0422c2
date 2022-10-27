@@ -41,28 +41,5 @@
       "textDeploy": " SAG. FAMILIA"
     }
   ],
-  "cart": [
-    {
-      "id": 1666803926837,
-      "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
-      "country": "SUDÁFRICA",
-      "plan": "CONOCÉ LA SABANA",
-      "duration": "9 DÍAS",
-      "reviews": "92",
-      "price": 1900,
-      "textDeploy": "SABI SABI",
-      "quantity": 4
-    },
-    {
-      "id": 1666803939424,
-      "image": "https://www.sabisabi.com/devhub/wp-content/uploads/2014/11/slide92-1024x512.jpg",
-      "country": "SUDÁFRICA",
-      "plan": "CONOCÉ LA SABANA",
-      "duration": "9 DÍAS",
-      "reviews": "92",
-      "price": 1900,
-      "textDeploy": "SABI SABI",
-      "quantity": 1
-    }
-  ]
+  "cart": [ ]
 }
